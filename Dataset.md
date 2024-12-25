@@ -25,7 +25,6 @@ This dataset has been curated specifically for the purpose of Arabic text correc
 
 ## Data Access
 To access the datasets for training, validation, and testing, use the following links (if hosted externally):
-
-Training Data: [Download Train Dataset]
-Validation Data: [Download Dev Dataset]
-Testing Data: [Download Test Datase]
+- Training Data: [Download Train Dataset]()
+- Validation Data: [Download Dev Dataset]()
+- Testing Data: [Download Test Datase]()
