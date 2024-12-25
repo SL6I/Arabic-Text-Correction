@@ -24,7 +24,7 @@ This dataset has been curated specifically for the purpose of Arabic text correc
 ![image alt](https://github.com/SL6I/Text-Correction/blob/5ea1f014c9f4d6cc7953e35c2093622309d23c42/Sample%20Test%20Data.jpg)
 
 ## Data Access
-To access the datasets for training, validation, and testing, use the following links (if hosted externally):
-- Training Data: [Download Train Dataset]()
-- Validation Data: [Download Dev Dataset]()
-- Testing Data: [Download Test Datase]()
+To access the datasets for training, validation, and testing, use the following links:
+- Training Data: [Click To Download]()
+- Validation Data: [Click To Download]()
+- Testing Data: [Click To Download]()
