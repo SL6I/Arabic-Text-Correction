@@ -17,10 +17,11 @@ This dataset has been curated specifically for the purpose of Arabic text correc
 
 ## Sample Data
 ### Training Data Sample
-![image alt](https://github.com/SL6I/Text-Correction/blob/082c557927b8069459b392e0cc0a63e3e4d36c88/Sample%20Data.jpg)
+![image alt](https://github.com/SL6I/Text-Correction/blob/5ea1f014c9f4d6cc7953e35c2093622309d23c42/Sample%20Train%20Data.jpg)
 ### Validation Data Sample
-
+![image alt](https://github.com/SL6I/Text-Correction/blob/5ea1f014c9f4d6cc7953e35c2093622309d23c42/Sample%20Dev%20Data.jpg)
 ### Testing Data Sample
+![image alt](https://github.com/SL6I/Text-Correction/blob/5ea1f014c9f4d6cc7953e35c2093622309d23c42/Sample%20Test%20Data.jpg)
 
 ## Data Access
 To access the datasets for training, validation, and testing, use the following links (if hosted externally):
