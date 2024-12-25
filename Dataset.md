@@ -1,7 +1,7 @@
 # Dataset Overview
 
 ## Source
-This dataset is used for the purpose of [specific task, e.g., sentiment analysis, text correction] in the domain of [specific domain, e.g., healthcare, finance].
+This dataset has been curated specifically for the purpose of Arabic text correction. It is part of the [AraSpell project](https://github.com/msalhab96/AraSpell/blob/main/README.md), which aims to improve the quality of text processing in the Arabic language.
 
 ## Dataset Contents
 - `train.csv`: Used for training the model. Contains 6,922,318 rows and 5 columns (97.19%).
@@ -16,13 +16,15 @@ This dataset is used for the purpose of [specific task, e.g., sentiment analysis
 - `Distorted_0.15`: Text with significant 15% distortions from the original.
 
 ## Sample Data
-![image alt](https://github.com/SL6I/Text-Correction/blob/082c557927b8069459b392e0cc0a63e3e4d36c88/Sample%20Data.jpg)
 ### Training Data Sample
+![image alt](https://github.com/SL6I/Text-Correction/blob/082c557927b8069459b392e0cc0a63e3e4d36c88/Sample%20Data.jpg)
+### Validation Data Sample
 
+### Testing Data Sample
 
 ## Data Access
 To access the datasets for training, validation, and testing, use the following links (if hosted externally):
 
-Training Data: Download Train Dataset
-Validation Data: Download Dev Dataset
-Testing Data: Download Test Datase
+Training Data: [Download Train Dataset]
+Validation Data: [Download Dev Dataset]
+Testing Data: [Download Test Datase]
