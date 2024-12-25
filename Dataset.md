@@ -16,7 +16,7 @@ This dataset is used for the purpose of [specific task, e.g., sentiment analysis
 - `Distorted_0.15`: Text with significant 15% distortions from the original.
 
 ## Sample Data
-
+![image alt](https://github.com/SL6I/Text-Correction/blob/082c557927b8069459b392e0cc0a63e3e4d36c88/Sample%20Data.jpg)
 ### Training Data Sample
 
 
