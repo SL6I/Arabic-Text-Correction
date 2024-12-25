@@ -18,3 +18,11 @@ This dataset is used for the purpose of [specific task, e.g., sentiment analysis
 ## Sample Data
 
 ### Training Data Sample
+
+
+## Data Access
+To access the datasets for training, validation, and testing, use the following links (if hosted externally):
+
+Training Data: Download Train Dataset
+Validation Data: Download Dev Dataset
+Testing Data: Download Test Datase
