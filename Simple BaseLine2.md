@@ -19,3 +19,5 @@ This document outlines a simple dictionary-based baseline for text correction. W
 - We use a function that compares raw tokens, their corrected and our predicted corrections.
 - We accumulate counts of true positives (TP), false positives (FP), and false negatives (FN).
 - From these counts, we compute precision, recall, and F1-score as standard measures of correction quality.
+
+### The Result
