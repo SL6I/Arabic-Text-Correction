@@ -48,12 +48,12 @@
   The **test set** is used to evaluate the final performance of trained models, offering an unbiased assessment of how effectively they correct grammatical errors in new, unseen Arabic text.
 
 ## Sample Data
-### Training Data Sample
-![image alt](https://github.com/SL6I/Text-Correction/blob/5ea1f014c9f4d6cc7953e35c2093622309d23c42/Sample%20Train%20Data.jpg)
-### Validation Data Sample
-![image alt](https://github.com/SL6I/Text-Correction/blob/5ea1f014c9f4d6cc7953e35c2093622309d23c42/Sample%20Dev%20Data.jpg)
-### Testing Data Sample
-![image alt](https://github.com/SL6I/Text-Correction/blob/5ea1f014c9f4d6cc7953e35c2093622309d23c42/Sample%20Test%20Data.jpg)
+S في الوقت الذي يكرم فيه (الامريكيون) (اوبنهايمر) () وتيلر ويكرم الروس زاخاروف () وحتى الهند تكرم.
+`A 5 6|||Edit|||الأمريكيون|||REQUIRED|||-NONE-|||0`
+`A 6 7|||Edit|||أوبنهايمر|||REQUIRED|||-NONE-|||0`
+`A 8 8|||Add_before|||،|||REQUIRED|||-NONE-|||0`
+`A 11 11|||Add_before|||،|||REQUIRED|||-NONE-|||0`
+
 
 ## Data Access
 To access the datasets for training, validation, and testing, use the following links:
