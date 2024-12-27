@@ -1,19 +1,50 @@
-# Dataset Overview
-
-## Source
-The [QALB-2014](https://camel.abudhabi.nyu.edu/qalb-shared-task-2015/) and [QALB-2015](https://camel.abudhabi.nyu.edu/qalb-shared-task-2015/) datasets were created to improve Arabic spelling and error correction in text processing.
-
 ## Dataset Contents
-- `train.csv`: Used for training the model. Contains 6,922,318 rows and 5 columns (97.19%).
-- `dev.csv`: Used for validating model performance during the training phase. Contains 100000 rows and 5 columns (1.40%).
-- `test.csv`: Used for final testing and evaluation of the model. Contains 100000 rows and 5 columns (1.40%).
 
-## Columns and Features
-- `Unnamed: 0`: Index column for each record in the dataset.
-- `Clean`: Original Arabic text, serving as the reference for corrections.
-- `Distorted_0.05`: Text with minor 5% distortions from the original.
-- `Distorted_0.1`: Text with moderate 10% distortions from the original.
-- `Distorted_0.15`: Text with significant 15% distortions from the original.
+### Train
+- **Files:**
+  - **QALB-2014-L1-Train.sent**  
+    Contains **19,411** original Arabic sentences, each representing a training example.
+  - **QALB-2014-L1-Train.cor**  
+    Contains the **corrected** versions of the sentences in **Train.sent**. Each line corresponds to the corrected form of the respective sentence in the `.sent` file.
+  - **QALB-2014-L1-Train.m2**  
+    Provides **detailed error annotations** for each sentence in **Train.sent**, following the M2 format (error type, position, and correction).
+  - **QALB-2014-L1-Train.column**  
+    Offers a **columnar view** that merges data from `.sent`, `.cor`, and `.m2` files for easier parsing and analysis.
+
+- **Description:**  
+  The **training set** is used to develop Arabic grammatical error correction models. It includes a substantial number of original sentences paired with corrections and error annotations, allowing models to learn common grammatical mistakes and their appropriate remedies.
+
+---
+
+### Development (Dev)
+- **Files:**
+  - **QALB-2014-L1-Dev.sent**  
+    Contains **2,000** original Arabic sentences for validation purposes.
+  - **QALB-2014-L1-Dev.cor**  
+    Contains the **corrected** versions of the sentences in **Dev.sent**, aligned line by line.
+  - **QALB-2014-L1-Dev.m2**  
+    Provides **detailed error annotations** in M2 format for each sentence in **Dev.sent**.
+  - **QALB-2014-L1-Dev.column**  
+    A **column-based** file combining `.sent`, `.cor`, and `.m2` data for convenient reference.
+
+- **Description:**  
+  The **development set** is used to fine-tune model parameters and evaluate intermediate performance. It helps prevent overfitting and ensures good generalization to unseen data.
+
+---
+
+### Test
+- **Files:**
+  - **QALB-2014-L1-Test.sent**  
+    Contains **2,500** original Arabic sentences for final evaluation.
+  - **QALB-2014-L1-Test.cor**  
+    Contains the **corrected** versions of the sentences in **Test.sent**, each on a separate line.
+  - **QALB-2014-L1-Test.m2**  
+    Offers **detailed error annotations** (M2 format) for each sentence in **Test.sent**.
+  - **QALB-2014-L1-Test.column**  
+    Provides a **columnar view** merging `.sent`, `.cor`, and `.m2` for the test set.
+
+- **Description:**  
+  The **test set** is used to evaluate the final performance of trained models, offering an unbiased assessment of how effectively they correct grammatical errors in new, unseen Arabic text.
 
 ## Sample Data
 ### Training Data Sample
