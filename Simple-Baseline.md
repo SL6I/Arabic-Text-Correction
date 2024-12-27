@@ -27,6 +27,15 @@ Our datasets have columns with progressively “distorted” versions of the **c
 ### 3. RapidFuzz Correction
 For each token in the **distorted** text, we find the closest match in the reference dictionary using `process.extractOne(word, clean_words, scorer=fuzz.WRatio)`. If the match’s similarity score is above a threshold (e.g., `> 80`), we replace the distorted token with its best match.
 
+As an Example:
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/0910c12b-0f03-4291-9f8c-ae17755e366e" width="600" height="500" alt="Description of image">
+</div>
+
+
+
+
 ### 4. Parallel Processing
 To handle larger datasets efficiently, the correction function is applied in parallel using the Python `multiprocessing.Pool`.
 
