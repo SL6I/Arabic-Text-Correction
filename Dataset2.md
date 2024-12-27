@@ -48,7 +48,7 @@
   The **test set** is used to evaluate the final performance of trained models, offering an unbiased assessment of how effectively they correct grammatical errors in new, unseen Arabic text.
 
 ## Sample Data
-S .في الوقت الذي يكرم فيه (الامريكيون) (اوبنهايمر) () وتيلر ويكرم الروس زاخاروف () وحتى الهند تكرم  
+**S .في الوقت الذي يكرم فيه الامريكيون اوبنهايمر وتيلر ويكرم الروس زاخاروف وحتى الهند تكرم**  
 `A 5 6|||Edit|||الأمريكيون|||REQUIRED|||-NONE-|||0`  
 `A 6 7|||Edit|||أوبنهايمر|||REQUIRED|||-NONE-|||0`  
 `A 8 8|||Add_before|||،|||REQUIRED|||-NONE-|||0`  
