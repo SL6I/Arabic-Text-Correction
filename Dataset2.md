@@ -48,11 +48,26 @@
   The **test set** is used to evaluate the final performance of trained models, offering an unbiased assessment of how effectively they correct grammatical errors in new, unseen Arabic text.
 
 ## Sample Data
-**S .في الوقت الذي يكرم فيه الامريكيون اوبنهايمر وتيلر ويكرم الروس زاخاروف وحتى الهند تكرم**  
-`A 5 6|||Edit|||الأمريكيون|||REQUIRED|||-NONE-|||0`  
-`A 6 7|||Edit|||أوبنهايمر|||REQUIRED|||-NONE-|||0`  
-`A 8 8|||Add_before|||،|||REQUIRED|||-NONE-|||0`  
-`A 11 11|||Add_before|||،|||REQUIRED|||-NONE-|||0`  
+
+
+**S إلياهو فينوغراد يتنبأ بسيل من الهجمات الإيرانية واللني إما ستسقط فوق مناطق العرب وبعض البنايات الخاليه أو تصوير لبعض الجثث الحيه وهي تنقل فوق الطائرات وغيرها من فبركات هوليووديه إعلاميه . العداء الإيراني ليس إلا نموذج من الكذب الممنهج على طريقة النازي هتلر .**  
+`A 7 8|||Edit|||والتي|||REQUIRED|||-NONE-|||0`  
+`A 15 16|||Edit|||الخالية|||REQUIRED|||-NONE-|||0`  
+`A 20 21|||Edit|||الحية|||REQUIRED|||-NONE-|||0`  
+`A 28 29|||Edit|||هوليوودية|||REQUIRED|||-NONE-|||0`  
+`A 29 30|||Edit|||إعلامية|||REQUIRED|||-NONE-|||0`  
+`A 35 36|||Edit|||نموذجا|||REQUIRED|||-NONE-|||0`  
+
+A: Denotes an annotation.
+
+7 8: Range of index in the text where the correction is applied. This correction changes the word at indexes 7 to 8.
+
+Edit: Type of annotation, indicating a modification of existing content.  
+  والتي: Corrected content to replace the original.
+REQUIRED: Signifies that this correction is necessary.  
+-NONE-: Placeholder, typically for additional flags or notes.  
+0: Confidence score or priority level (if applicable).  
+
 
 
 ## Data Access
