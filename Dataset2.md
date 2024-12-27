@@ -64,7 +64,7 @@ A: Denotes an annotation.
 
 Edit: Type of annotation, indicating a modification of existing content.  
 
-والتي: Corrected content to replace the original.  
+<span dir="rtl">**والتي**: Corrected content to replace the original.</span>
 
 REQUIRED: Signifies that this correction is necessary.  
 
