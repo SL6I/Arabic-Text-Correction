@@ -49,10 +49,10 @@
 
 ## Sample Data
 S في الوقت الذي يكرم فيه (الامريكيون) (اوبنهايمر) () وتيلر ويكرم الروس زاخاروف () وحتى الهند تكرم.
-`A 5 6|||Edit|||الأمريكيون|||REQUIRED|||-NONE-|||0`
-`A 6 7|||Edit|||أوبنهايمر|||REQUIRED|||-NONE-|||0`
-`A 8 8|||Add_before|||،|||REQUIRED|||-NONE-|||0`
-`A 11 11|||Add_before|||،|||REQUIRED|||-NONE-|||0`
+`A 5 6|||Edit|||الأمريكيون|||REQUIRED|||-NONE-|||0`  
+`A 6 7|||Edit|||أوبنهايمر|||REQUIRED|||-NONE-|||0`  
+`A 8 8|||Add_before|||،|||REQUIRED|||-NONE-|||0`  
+`A 11 11|||Add_before|||،|||REQUIRED|||-NONE-|||0`  
 
 
 ## Data Access
