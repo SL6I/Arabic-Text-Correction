@@ -63,10 +63,15 @@ A: Denotes an annotation.
 7 8: Range of index in the text where the correction is applied. This correction changes the word at indexes 7 to 8.
 
 Edit: Type of annotation, indicating a modification of existing content.  
-  والتي: Corrected content to replace the original.
+
+والتي: Corrected content to replace the original.  
+
 REQUIRED: Signifies that this correction is necessary.  
--NONE-: Placeholder, typically for additional flags or notes.  
-0: Confidence score or priority level (if applicable).  
+
+-NONE-: Placeholder, typically for additional flags or notes.    
+
+0: Confidence score or priority level (if applicable).    
+
 
 
 
