@@ -9,7 +9,6 @@
 * QALB-2014-L1-Train/Test/Dev`.m2`: Error annotations and corrections in `.m2` format, used for training and testing grammatical error correction systems.
   
 * QALB-2014-L1-Train/Test/Dev`.sent`: Includes Arabic sentences with potential grammatical errors for text correction tasks, with **19,411** sentences in Train, **1,017** in Dev, and **968** in Test.
----
 
 - **Train:**    
   The **training set** is used to develop Arabic grammatical error correction models. It includes a substantial number of original sentences paired with corrections and error annotations, allowing models to learn common grammatical mistakes and their appropriate remedies.
@@ -21,8 +20,7 @@
   The **test set** is used to evaluate the final performance of trained models, offering an unbiased assessment of how effectively they correct grammatical errors in new, unseen Arabic text.
 ---
 ## Sample Data
-
-
+---
 **S إلياهو فينوغراد يتنبأ بسيل من الهجمات الإيرانية واللني إما ستسقط فوق مناطق العرب وبعض البنايات الخاليه أو تصوير لبعض الجثث الحيه وهي تنقل فوق الطائرات وغيرها من فبركات هوليووديه إعلاميه . العداء الإيراني ليس إلا نموذج من الكذب الممنهج على طريقة النازي هتلر .**  
 `A 7 8|||Edit|||والتي|||REQUIRED|||-NONE-|||0`  
 `A 15 16|||Edit|||الخالية|||REQUIRED|||-NONE-|||0`  
@@ -44,7 +42,7 @@
 * -NONE-: Placeholder, typically for additional flags or notes.    
 
 * 0: Confidence score or priority level (if applicable).    
-
+---
 ## Type of annotation 
 - **Edit**:  
 Annotation: A 0 1|||Edit|||إلى|||REQUIRED|||-NONE-|||0  
@@ -77,11 +75,12 @@ Explanation: Move the text "هؤلاء الإرهابيون" from positions 30 t
 - **Other**:  
 Annotation: A 22 24|||Other|||وما الذي|||REQUIRED|||-NONE-|||0  
 Explanation: This represents an unspecified or unique correction action involving the text "وما الذي" between positions 22 and 24.  
-
+---
 
 
 
 ## Data Access
+---
 To access the datasets for training, validation, and testing, use the following links:
 - Qalb Dataset: [Click To Request](https://docs.google.com/forms/d/e/1FAIpQLScSsuAu1_84KORcpzOKTid0nUMQDZNQKKnVcMilaIZ6QF-xdw/viewform)
-
+---
