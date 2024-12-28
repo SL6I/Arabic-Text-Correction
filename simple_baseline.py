@@ -50,6 +50,9 @@ def build_correction_dictionary(train_sent_path, train_cor_path):
         cor_tokens = cor.split()
 
         # Compare tokens up to the length of the shorter sentence
+
+        # rt = raw_tokens
+        # ct = cor_tokens
         for rt, ct in zip(raw_tokens, cor_tokens):
             if rt != ct:
                 if rt not in freq_map:
@@ -72,7 +75,7 @@ def build_correction_dictionary(train_sent_path, train_cor_path):
 def apply_correction_dictionary(sentence, correction_dict):
     """
     Splits a sentence into tokens and uses correction_dict to correct each token if known.
-    Returns the corrected sentence (token-based) as a list of tokens.
+    Returns the corrected sentence as a list of tokens.
     """
     tokens = sentence.split()
     corrected_tokens = []
@@ -93,7 +96,7 @@ def evaluate_precision_recall_f1(raw_lines, cor_lines, correction_dict):
     Calculates precision, recall, and F1 score for token-level corrections.
 
         raw_lines (list of str): Raw or erroneous sentences.
-        ref_lines (list of str): Corrected reference sentences.
+        cor_lines (list of str): Corrected reference sentences.
         correction_dict: A dictionary mapping incorrect tokens to corrected tokens.
 """
 
@@ -108,7 +111,7 @@ def evaluate_precision_recall_f1(raw_lines, cor_lines, correction_dict):
         # Generate predictions based on the correction dictionary
         pred_tokens = apply_correction_dictionary(raw_line, correction_dict)
 
-        # Only compare the minimum length of raw, reference, and predicted tokens
+        # Only compare the minimum length of raw, corrected, and predicted tokens
         min_len = min(len(raw_tokens), len(cor_tokens), len(pred_tokens))
 
         for i in range(min_len):
