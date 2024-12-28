@@ -45,4 +45,4 @@ To run `score.py`, you must provide **three input files** that serve different p
   
 --- 
 # References  
-- [https://aclanthology.org/2023.emnlp-main.396.pdf  ](https://en.wikipedia.org/wiki/Precision_and_recall)
+- (https://en.wikipedia.org/wiki/Precision_and_recall)
