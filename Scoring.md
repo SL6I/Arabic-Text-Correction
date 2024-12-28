@@ -19,7 +19,6 @@ Precision, Recall, and F1 Score are commonly used metrics information retrieval 
 * Precision ensures that the system avoids unnecessary or incorrect changes to words or sentences.  
 * High precision means that when the system corrects a word, it is likely to be correct.
 
-Higher scores indicate better performance
 ---
 
 # Recall  
@@ -29,7 +28,6 @@ Higher scores indicate better performance
 * Recall ensures that the system does not miss necessary corrections.  
 * High recall means the system is effective at finding and fixing errors.
 
-Higher scores indicate better performance
 ---  
 
 # F1 Score  
@@ -39,7 +37,6 @@ Higher scores indicate better performance
 * F1 Score is useful when you need to balance the importance of both Precision and Recall.  
 * In Arabic text correction, if the system is too conservative (high Precision, low Recall) or too aggressive (low Precision, high Recall), the F1 Score will drop.
 
-Higher scores indicate better performance
 ---
 
 # How to run score.py
