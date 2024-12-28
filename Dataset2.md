@@ -2,17 +2,12 @@
 
 ## Dataset Contents
 ---
-* QALB-2014-L1-Train/Test/Dev.column: Contains morphological and grammatical annotations for Arabic words in sentences, detailing parts of speech and lemmas.  
-* QALB-2014-L1-Train/Test/Dev.cor: Provides corrected versions of Arabic sentences, serving as gold standards for text correction evaluations.  
-* QALB-2014-L1-Train/Test/Dev.m2: Error annotations and corrections in .m2 format, used for training and testing grammatical error correction systems.
-* 
+* QALB-2014-L1-Train/Test/Dev`.column`: These files provide comprehensive annotations for Arabic words, highlighting their morphological features and grammatical properties, including parts of speech and lemmas.  
+* QALB-2014-L1-Train/Test/Dev`.cor`: These files contain the finalized, corrected versions of Arabic sentences, which serve as benchmarks for evaluating the performance of text correction technologies.
+* QALB-2014-L1-Train/Test/Dev`.m2`: Error annotations and corrections in `.m2` format, used for training and testing grammatical error correction systems.  
+* QALB-2014-L1-Train/Test/Dev`.sent`: Includes Arabic sentences with potential grammatical errors for text correction tasks, with **19,411** sentences in Train, **1,017** in Dev, and **968** in Test.
 ---
 
-QALB-2014-L1-Train.sent: Contains 19,411 Arabic sentences with potential grammatical errors, used for text correction tasks.  
-QALB-2014-L1-Dev.sent: Includes 1,017 Arabic sentences with potential grammatical errors, used for text correction tasks.  
-QALB-2014-L1-Test.sent: Comprises 968 Arabic sentences with potential grammatical errors, used for text correction tasks.  
-
----
 ### Train
 - **Files:**
   - **QALB-2014-L1-Train.sent**  
