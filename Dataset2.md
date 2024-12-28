@@ -21,7 +21,7 @@
 ### Development (Dev)
 - **Files:**
   - **QALB-2014-L1-Dev.sent**  
-    Contains **2,000** original Arabic sentences for validation purposes.
+    Contains **1017** original Arabic sentences for validation purposes.
   - **QALB-2014-L1-Dev.cor**  
     Contains the **corrected** versions of the sentences in **Dev.sent**, aligned line by line.
   - **QALB-2014-L1-Dev.m2**  
@@ -37,7 +37,7 @@
 ### Test
 - **Files:**
   - **QALB-2014-L1-Test.sent**  
-    Contains **2,500** original Arabic sentences for final evaluation.
+    Contains **968** original Arabic sentences for final evaluation.
   - **QALB-2014-L1-Test.cor**  
     Contains the **corrected** versions of the sentences in **Test.sent**, each on a separate line.
   - **QALB-2014-L1-Test.m2**  
