@@ -26,3 +26,7 @@ Precision, Recall, and F1 Score are commonly used metrics information retrieval 
 **Purpose:**   
 * F1 Score is useful when you need to balance the importance of both Precision and Recall.  
 * In Arabic text correction, if the system is too conservative (high Precision, low Recall) or too aggressive (low Precision, high Recall), the F1 Score will drop.  
+
+
+# References  
+- https://aclanthology.org/2023.emnlp-main.396.pdf  
