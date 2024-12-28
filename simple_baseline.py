@@ -94,7 +94,7 @@ def evaluate_precision_recall_f1(raw_lines, cor_lines, correction_dict):
 
         raw_lines (list of str): Raw or erroneous sentences.
         ref_lines (list of str): Corrected reference sentences.
-        correction_dict (dict): A dictionary mapping incorrect tokens to corrected tokens.
+        correction_dict: A dictionary mapping incorrect tokens to corrected tokens.
 """
 
     TP = 0  # Count of correct changes
