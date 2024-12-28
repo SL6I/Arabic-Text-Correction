@@ -10,7 +10,7 @@ Precision, Recall, and F1 Score are commonly used metrics information retrieval 
 High precision means that when the system corrects a word, it is likely to be correct.
 
 # Recall  
-**Definition**: Recall measures the ability of a process to identify all relevant or correct outcomes.
+**Definition**: Recall measures how many of the actual errors in the input text your system successfully corrected. It focuses on the system's ability to detect and fix errors.
 ![image.png](https://github.com/SL6I/Text-Correction/blob/015b61f6e89d34e42fbf829873b08f6b31657a73/Recall.png)      
 **Purpose**: Recall ensures that the system does not miss necessary corrections.  
 High recall means the system is effective at finding and fixing errors.
