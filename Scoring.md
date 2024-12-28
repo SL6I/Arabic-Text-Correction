@@ -28,6 +28,8 @@ Higher scores indicate better performance
 **Purpose:**     
 * Recall ensures that the system does not miss necessary corrections.  
 * High recall means the system is effective at finding and fixing errors.
+
+Higher scores indicate better performance
 ---  
 
 # F1 Score  
@@ -35,7 +37,9 @@ Higher scores indicate better performance
 ![image.png](https://github.com/SL6I/Text-Correction/blob/991296c33dfb164cabe364793939d8bd1000d632/Images/F1%20Score.png)    
 **Purpose:**   
 * F1 Score is useful when you need to balance the importance of both Precision and Recall.  
-* In Arabic text correction, if the system is too conservative (high Precision, low Recall) or too aggressive (low Precision, high Recall), the F1 Score will drop.  
+* In Arabic text correction, if the system is too conservative (high Precision, low Recall) or too aggressive (low Precision, high Recall), the F1 Score will drop.
+
+Higher scores indicate better performance
 ---
 
 # How to run score.py
