@@ -1,10 +1,10 @@
 ## Evaluation Function for Precision, Recall, and F1  
 Precision, Recall, and F1 Score are commonly used metrics information retrieval to evaluate the performance of models, especially in classification tasks.  
 ![image alt](https://github.com/SL6I/Text-Correction/blob/bc8ecdf859ecc6285ca2bfd7c8d56a256208272d/Metrics.png)  
-*True Positive (TP):The system made a correction, and it was correct (fixed an actual error).  
-*False Positive (FP):The system made a correction, but it was unnecessary or wrong.  
-*False Negative (FN):There was an error in the text, but the system failed to correct it.  
-*True Negative (TN):The system correctly left an already correct word unchanged.  
+- True Positive (TP):The system made a correction, and it was correct (fixed an actual error).  
+- False Positive (FP):The system made a correction, but it was unnecessary or wrong.  
+- False Negative (FN):There was an error in the text, but the system failed to correct it.  
+- True Negative (TN):The system correctly left an already correct word unchanged.  
 # Precision
 **Definition**: Precision measures the accuracy of a process by calculating the proportion of correct outcomes out of all the outcomes identified as positive. It evaluates how often the identified positives are actually correct.  
 ![image alt](https://github.com/SL6I/Text-Correction/blob/b9782b0223ecc585a681c05df0b78988d7dab499/Precision.png)    
