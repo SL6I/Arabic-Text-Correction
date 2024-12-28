@@ -30,7 +30,7 @@ Precision, Recall, and F1 Score are commonly used metrics information retrieval 
 
 # How to run score.py
 To run score.py, you must provide three input files that serve different purposes. Each file represents a different stage of the text correction process. Below, I'll guide you on how to properly prepare the required files and how to modify score.py to accept and handle these files correctly.  
-The Three Input Files:  
+**The Three Input Files:**  
 - gold_file: This file contains the correct text, which serves as the reference or "ground truth". It should have no errors.  
 - raw_file: This file contains the original text, which may contain errors or issues (e.g., spelling mistakes, grammar issues, etc.).
 - pred_file: This file contains the predicted or corrected text. It should be the output of your model or manual corrections applied to the raw_file.
