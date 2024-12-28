@@ -1,5 +1,6 @@
 ## Evaluation Function for Precision, Recall, and F1  
 Precision, Recall, and F1 Score are commonly used metrics information retrieval to evaluate the performance of models, especially in classification tasks.  
+![image alt](https://github.com/SL6I/Text-Correction/blob/bc8ecdf859ecc6285ca2bfd7c8d56a256208272d/Metrics.png)
 
 # Precision
 **Definition**: Precision measures the accuracy of a process by calculating the proportion of correct outcomes out of all the outcomes identified as positive. It evaluates how often the identified positives are actually correct.  
