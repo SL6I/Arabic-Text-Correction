@@ -13,18 +13,18 @@ import collections
 
 """# Read Filesd As lines"""
 
-########################################
+
 # READ LINES FROM FILE
-########################################
+
 def read_lines(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         return [line.strip() for line in f.readlines()]
 
 """# Simple BaseLine"""
 
-########################################
+
 # 2) BUILD A TOKEN-LEVEL DICTIONARY
-########################################
+
 def build_correction_dictionary(train_sent_path, train_cor_path):
     """
     Constructs a dictionary mapping raw tokens to their most frequent corrected tokens.
@@ -66,9 +66,9 @@ def build_correction_dictionary(train_sent_path, train_cor_path):
 
 """**Apply dictionar**"""
 
-########################################
+
 # APPLY THE DICTIONARY
-########################################
+
 def apply_correction_dictionary(sentence, correction_dict):
     """
     Splits a sentence into tokens and uses correction_dict to correct each token if known.
@@ -80,14 +80,14 @@ def apply_correction_dictionary(sentence, correction_dict):
         if tok in correction_dict:
             corrected_tokens.append(correction_dict[tok])
         else:
-            corrected_tokens.append(tok)  # unknown, leave as-is
+            corrected_tokens.append(tok)  
     return corrected_tokens
 
 """# Evaluation Function for Precision, Recall, and F1"""
 
-########################################
+
 # 4) EVALUATION: TOKEN-LEVEL PRECISION, RECALL, F1
-########################################
+
 def evaluate_precision_recall_f1(raw_lines, ref_lines, correction_dict):
     """
     raw_lines: raw/erroneous sentences (list of strings)
