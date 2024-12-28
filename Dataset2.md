@@ -1,7 +1,18 @@
 ## Overview  
 
 ## Dataset Contents
+---
+* QALB-2014-L1-Train/Test/Dev.column: Contains morphological and grammatical annotations for Arabic words in sentences, detailing parts of speech and lemmas.  
+* QALB-2014-L1-Train/Test/Dev.cor: Provides corrected versions of Arabic sentences, serving as gold standards for text correction evaluations.  
+* QALB-2014-L1-Train/Test/Dev.m2: Error annotations and corrections in .m2 format, used for training and testing grammatical error correction systems.
+* 
+---
 
+QALB-2014-L1-Train.sent: Contains 19,411 Arabic sentences with potential grammatical errors, used for text correction tasks.  
+QALB-2014-L1-Dev.sent: Includes 1,017 Arabic sentences with potential grammatical errors, used for text correction tasks.  
+QALB-2014-L1-Test.sent: Comprises 968 Arabic sentences with potential grammatical errors, used for text correction tasks.  
+
+---
 ### Train
 - **Files:**
   - **QALB-2014-L1-Train.sent**  
@@ -16,14 +27,6 @@
 - **Description:**  
   The **training set** is used to develop Arabic grammatical error correction models. It includes a substantial number of original sentences paired with corrections and error annotations, allowing models to learn common grammatical mistakes and their appropriate remedies.
 
----
-* QALB-2014-L1-Train/Test/Dev.column: Contains morphological and grammatical annotations for Arabic words in sentences, detailing parts of speech and lemmas.  
-* QALB-2014-L1-Train/Test/Dev.cor: Provides corrected versions of Arabic sentences, serving as gold standards for text correction evaluations.  
-* QALB-2014-L1-Train/Test/Dev.m2: Error annotations and corrections in .m2 format, used for training and testing grammatical error correction systems.  
----
-QALB-2014-L1-Train.sent: Contains 19,411 Arabic sentences with potential grammatical errors, used for text correction tasks.  
-QALB-2014-L1-Dev.sent: Includes 1,017 Arabic sentences with potential grammatical errors, used for text correction tasks.  
-QALB-2014-L1-Test.sent: Comprises 968 Arabic sentences with potential grammatical errors, used for text correction tasks.  
 
 ### Development (Dev)
 - **Files:**
