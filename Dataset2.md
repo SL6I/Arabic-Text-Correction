@@ -110,7 +110,5 @@ Explanation: This represents an unspecified or unique correction action involvin
 
 ## Data Access
 To access the datasets for training, validation, and testing, use the following links:
-- Training Data: [Click To Download](https://drive.google.com/file/d/1nWCQAENGr2TGC_27vz1NzteqmuXlTDx7/view?usp=sharing)
-- Validation Data: [Click To Download](https://drive.google.com/file/d/1h8I0qNsNz1OfRzUQEahB8Zpiqyzi3OmB/view?usp=sharing)
-- Testing Data: [Click To Download](https://drive.google.com/file/d/1EQuXoM3Tj5bZqsZxYBakhZ7ZNbFH-1LB/view?usp=sharing)
+- Qalb Dataset: [Click To Request](**https://drive.google.com/file/d/1nWCQAENGr2TGC_27vz1NzteqmuXlTDx7/view?usp=sharing**)
 
