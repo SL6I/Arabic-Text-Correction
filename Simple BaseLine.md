@@ -22,4 +22,4 @@ This document outlines a simple dictionary-based baseline for text correction. W
 - From these counts, we compute precision, recall, and F1-score as standard measures of correction quality.
 ---
 ### The Result
-![image](https://github.com/SL6I/Text-Correction/blob/6573d07542c5943edbb5c7cfff10d0b262fd9781/Images/Simple%20Baseline.png)
+![image](https://github.com/SL6I/Text-Correction/blob/ed62f6148f8c9e030ab284cb05eccd6228144db9/Images/Simple%20Baseline.jpg)
