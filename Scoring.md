@@ -1,4 +1,5 @@
-## Evaluation Function for Precision, Recall, and F1  
+## Evaluation Function for Precision, Recall, and F1
+---
 Precision, Recall, and F1 Score are commonly used metrics information retrieval to evaluate the performance of models, especially in classification tasks.  
 
 ![image alt](https://github.com/SL6I/Text-Correction/blob/991296c33dfb164cabe364793939d8bd1000d632/Images/Metrics.png)  
