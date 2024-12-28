@@ -88,59 +88,56 @@ def apply_correction_dictionary(sentence, correction_dict):
 
 # 4) EVALUATION: TOKEN-LEVEL PRECISION, RECALL, F1
 
-def evaluate_precision_recall_f1(raw_lines, ref_lines, correction_dict):
+def evaluate_precision_recall_f1(raw_lines, cor_lines, correction_dict):
     """
-    raw_lines: raw/erroneous sentences (list of strings)
-    ref_lines: reference/corrected sentences (list of strings)
-    correction_dict: dict for correction
-    Returns: (precision, recall, f1)
-    """
+    Calculates precision, recall, and F1 score for token-level corrections.
 
+        raw_lines (list of str): Raw or erroneous sentences.
+        ref_lines (list of str): Corrected reference sentences.
+        correction_dict (dict): A dictionary mapping incorrect tokens to corrected tokens.
+"""
 
-    # Counters for P/R/F1
-    TP = 0  # changed token matches gold
-    FP = 0  # changed token does NOT match gold
-    FN = 0  # did NOT change token, but gold is different
+    TP = 0  # Count of correct changes
+    FP = 0  # Count of incorrect changes
+    FN = 0  # Count of missed necessary changes
 
-    for raw_line, ref_line in zip(raw_lines, ref_lines):
+    for raw_line, cor_line in zip(raw_lines, cor_lines):
         raw_tokens = raw_line.split()
-        ref_tokens = ref_line.split()
+        cor_tokens = cor_line.split()
 
-        # Inference
+        # Generate predictions based on the correction dictionary
         pred_tokens = apply_correction_dictionary(raw_line, correction_dict)
 
-        # We'll compare up to min_len tokens for simplicity
-        min_len = min(len(raw_tokens), len(ref_tokens), len(pred_tokens))
+        # Only compare the minimum length of raw, reference, and predicted tokens
+        min_len = min(len(raw_tokens), len(cor_tokens), len(pred_tokens))
 
         for i in range(min_len):
             r_tok = raw_tokens[i]
-            ref_tok = ref_tokens[i]
+            cor_tok = cor_tokens[i]
             pred_tok = pred_tokens[i]
 
-            # Did we change this token?
+            # Check if the prediction changed the raw token
             changed = (pred_tok != r_tok)
-            gold_diff = (ref_tok != r_tok)  # gold says it should be changed
+            # Check if the correct differs from the raw token
+            gold_diff = (cor_tok != r_tok)
 
             if changed and gold_diff:
-                # We changed it, and the gold is also different from raw
-                if pred_tok == ref_tok:
+                # Token was changed and it needed changing
+                if pred_tok == cor_tok:
                     TP += 1
                 else:
                     FP += 1
             elif changed and not gold_diff:
-                # We changed it, but gold says it should NOT be changed
+                # Token was changed but it didn't need changing
                 FP += 1
             elif (not changed) and gold_diff:
-                # We did NOT change it, but gold is different
+                # Token was not changed but it needed changing
                 FN += 1
-            # if not changed and not gold_diff -> True Negative (we ignore in GEC F1)
+            # If not changed and not gold_diff, it's a correct ignore (True Negative).
 
-    precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
-    recall    = TP / (TP + FN) if (TP + FN) > 0 else 0.0
-    if precision + recall > 0:
-        f1 = 2 * precision * recall / (precision + recall)
-    else:
-        f1 = 0.0
+    precision = TP / (TP + FP) if (TP + FP) else 0.0
+    recall = TP / (TP + FN) if (TP + FN) else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
 
     return precision, recall, f1
 
@@ -148,20 +145,20 @@ def evaluate_precision_recall_f1(raw_lines, ref_lines, correction_dict):
 
 if __name__ == "__main__":
 
-    train_sent = r"C:\Users\SL6\Desktop\S\QALB-0.9.1-Dec03-2021-SharedTasks\data\2014\train\QALB-2014-L1-Train.sent"
-    train_cor = r"C:\Users\SL6\Desktop\S\QALB-0.9.1-Dec03-2021-SharedTasks\data\2014\train\QALB-2014-L1-Train.cor"
-    dev_sent = r"C:\Users\SL6\Desktop\S\QALB-0.9.1-Dec03-2021-SharedTasks\data\2014\test\QALB-2014-L1-Test.sent"
-    dev_cor = r"C:\Users\SL6\Desktop\S\QALB-0.9.1-Dec03-2021-SharedTasks\data\2014\test\QALB-2014-L1-Test.cor"
+    train_sent = "/content/QALB-2014-L1-Train.sent"
+    train_cor  = "/content/QALB-2014-L1-Train.cor"
+    dev_sent   = "/content/QALB-2014-L1-Dev.sent"
+    dev_cor    = "/content/QALB-2014-L1-Dev.cor"
 
     # STEP A: BUILD THE DICTIONARY FROM TRAIN
     correction_dict = build_correction_dictionary(train_sent, train_cor)
     print(f"Built dictionary with {len(correction_dict)} entries.")
-    # print(correction_dict)
+    print(correction_dict)
     # STEP B: EVALUATE ON DEV
     dev_raw_lines = read_lines(dev_sent)
-    dev_ref_lines = read_lines(dev_cor)
+    dev_cor_lines = read_lines(dev_cor)
 
-    precision, recall, f1 = evaluate_precision_recall_f1(dev_raw_lines, dev_ref_lines, correction_dict)
+    precision, recall, f1 = evaluate_precision_recall_f1(dev_raw_lines, dev_cor_lines, correction_dict)
 
     print("=== Baseline Dictionary Model (DEV) ===")
     print(f"Precision: {precision:.3f}")
