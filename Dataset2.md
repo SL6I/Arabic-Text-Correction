@@ -44,6 +44,7 @@
 * 0: Confidence score or priority level (if applicable).    
 ---
 ## Type of annotation 
+---  
 - **Edit**:  
 Annotation: A 0 1|||Edit|||إلى|||REQUIRED|||-NONE-|||0  
 Explanation: Change the text at position 0 to "إلى".  
@@ -81,6 +82,6 @@ Explanation: This represents an unspecified or unique correction action involvin
 
 ## Data Access
 ---
-To access the datasets for training, validation, and testing, use the following links:
+To access the datasets you had to request it from the following link:
 - Qalb Dataset: [Click To Request](https://docs.google.com/forms/d/e/1FAIpQLScSsuAu1_84KORcpzOKTid0nUMQDZNQKKnVcMilaIZ6QF-xdw/viewform)
 ---
