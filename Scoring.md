@@ -41,7 +41,7 @@ To run `score.py`, you must provide **three input files** that serve different p
 **The Three Input Files:**  
 - **gold_file:** This file contains the correct text, which serves as the reference or "ground truth". It should have no errors.  
 - **raw_file:** This file contains the original text, which may contain errors or issues (e.g., spelling mistakes, grammar issues, etc.).
-- **pred_file:** This file contains the predicted or corrected text. It should be the output of your model or manual corrections applied to the raw_file.
+- **pred_file:** This file contains the predicted or corrected text. It should be the output of your model applied to the raw_file.
   
 --- 
 # References  
