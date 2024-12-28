@@ -19,7 +19,7 @@ Precision, Recall, and F1 Score are commonly used metrics information retrieval 
 * Precision ensures that the system avoids unnecessary or incorrect changes to words or sentences.  
 * High precision means that when the system corrects a word, it is likely to be correct.
 
-*Higher scores indicate better performance*
+Higher scores indicate better performance
 ---
 
 # Recall  
