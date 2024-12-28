@@ -8,7 +8,7 @@ Precision, Recall, and F1 Score are commonly used metrics information retrieval 
 
 # Recall  
 **Definition**: Recall is the percentage of actual errors in the text that the system successfully corrects.
-![image.png](https://github.com/SL6I/Text-Correction/blob/b9782b0223ecc585a681c05df0b78988d7dab499/Precision.png)      
+![image.png](https://github.com/SL6I/Text-Correction/blob/015b61f6e89d34e42fbf829873b08f6b31657a73/Recall.png)      
 **Purpose**: Important when missing errors (false negatives) leads to uncorrected mistakes.
 
 # F1 Score  
