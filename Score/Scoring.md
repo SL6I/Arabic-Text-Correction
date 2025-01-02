@@ -53,7 +53,7 @@ To score the dataset using the m2scorer.py script, use the following general for
 **Example:**
 
 
-```python m2scorer.py Dataset/train/QALB-2014-L1-Train.sent Dataset/train/QALB-2014-L1-Train.m2```
+```python Score\m2scorer.py Dataset\Test\QALB-2014-L1-Test.cor Dataset\Test\QALB-2014-L1-Test.m2```
 
 
 **Ensure that:**
