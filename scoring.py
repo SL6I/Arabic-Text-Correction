@@ -69,9 +69,9 @@ def evaluate_precision_recall_f1(raw_lines, cor_lines, pred_lines):
 
 def main():
     """Runs the evaluation by loading data files and calculating evaluation metrics."""
-    gold_file = r"C:\Users\slenk\Text-Correction-1\Dataset\Dev\QALB-2014-L1-Dev.cor"
-    raw_file = r"C:\Users\slenk\Text-Correction-1\Dataset\Dev\QALB-2014-L1-Dev.sent"
-    pred_file = r"C:\Users\slenk\Text-Correction-1\Dataset\Dev\QALB-2014-L1-Dev.cor"
+    gold_file = r"Dataset/Dev/QALB-2014-L1-Dev.cor"
+    raw_file = r"Dataset/Dev/QALB-2014-L1-Dev.sent"
+    pred_file = r"Dataset/Dev/QALB-2014-L1-Dev.cor"
 
     cor_lines = read_lines(gold_file)
     raw_lines = read_lines(raw_file)
