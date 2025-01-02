@@ -1,6 +1,6 @@
 ## Evaluation Function for Precision, Recall, and F1
 ---
-Precision, Recall, and F1 Score are commonly used metrics information retrieval to evaluate the performance of models, especially in classification tasks.  
+Precision, Recall, and F1 Score are commonly used metrics for information retrieval to evaluate the performance of models, especially in classification tasks.  
 
 ![image alt](https://github.com/SL6I/Text-Correction/blob/991296c33dfb164cabe364793939d8bd1000d632/Images/Metrics.png)  
 
@@ -36,13 +36,30 @@ Precision, Recall, and F1 Score are commonly used metrics information retrieval 
 * In Arabic text correction, if the system is too conservative (high Precision, low Recall) or too aggressive (low Precision, high Recall), the F1 Score will drop.  
 ---
 
-# How to run score.py
-To run `score.py`, you must provide **three input files** that serve different purposes. Each file represents a different stage of the text correction process. Below, I'll guide you on how to properly prepare the required files and how to modify score.py to accept and handle these files correctly.  
-**The Three Input Files:**  
-- **gold_file:** This file contains the correct text, which serves as the reference or "ground truth". It should have no errors.  
-- **raw_file:** This file contains the original text, which may contain errors or issues (e.g., spelling mistakes, grammar issues, etc.).
-- **pred_file:** This file contains the predicted or corrected text. It should be the output of your model applied to the raw_file.
-  
+# How to run the script
+**Running the ```m2scorer``` Script:**
+
+
+To score the dataset using the m2scorer.py script, use the following general form in terminal:
+
+```python m2scorer.py <input_corpus_file> <input_m2_file>```
+
+
+**Parameters:**
+
+- ```<input_corpus_file>```: The path to the corpus file containing the original sentences.
+- ```<input_m2_file>```: The path to the M2 file containing the corrections.
+
+**Example:**
+
+
+```python m2scorer.py Dataset/train/QALB-2014-L1-Train.sent Dataset/train/QALB-2014-L1-Train.m2```
+
+
+**Ensure that:**
+
+- Python is installed on your system.
+- The m2scorer.py script and input files are available in the specified paths.
 --- 
-# References  
+# References:  
 - (https://en.wikipedia.org/wiki/Precision_and_recall)
