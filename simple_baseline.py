@@ -148,10 +148,10 @@ def evaluate_precision_recall_f1(raw_lines, cor_lines, correction_dict):
 
 if __name__ == "__main__":
 
-    train_sent = "/content/QALB-2014-L1-Train.sent"
-    train_cor  = "/content/QALB-2014-L1-Train.cor"
-    dev_sent   = "/content/QALB-2014-L1-Dev.sent"
-    dev_cor    = "/content/QALB-2014-L1-Dev.cor"
+    train_sent = "Dataset\Train\QALB-2014-L1-Train.sent"
+    train_cor  = "Dataset\Train\QALB-2014-L1-Train.cor"
+    dev_sent   = "Dataset\Dev\QALB-2014-L1-dev.sent"
+    dev_cor    = "Dataset\Dev\QALB-2014-L1-dev.cor"
 
     # STEP A: BUILD THE DICTIONARY FROM TRAIN
     correction_dict = build_correction_dictionary(train_sent, train_cor)
