@@ -22,7 +22,7 @@ python build_baseline.py path/to/train.m2
   }
   ```
   ---
-### 2) Apply the Dictionary (Inference Phase on Test set)
+### 2) Apply the Dictionary (Inference Phase on the Test set)
 
 - **Goal**: Correct new text using the dictionary.  
 - **Method**: For each token in each sentence:
