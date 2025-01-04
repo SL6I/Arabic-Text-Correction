@@ -33,7 +33,8 @@ python build_baseline.py path/to/train.m2
 
 **Example**:
 ```bash
-python simple_baseline.py majority_map.json path/to/dev.sent
+cd scripts
+python simple_baseline.py majority_map.json ../Dataset/dev.sent
 ```
 - Will Produce `baseline_output.txt`.
 
