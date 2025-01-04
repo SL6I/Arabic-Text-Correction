@@ -21,6 +21,7 @@ python build_baseline.py path/to/train.m2
     ...
   }
   ```
+
   ---
 ### 2) Apply the Dictionary (Inference Phase on the Test set)
 
