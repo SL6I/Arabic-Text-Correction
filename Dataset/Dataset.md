@@ -25,35 +25,13 @@ The QALB-2014-L1 dataset, sourced from the QALB project, is designed to support 
 ---
 ## Sample Data
 ---
-********************
-[column Sample](Dataset/Dev/QALB-2014-L1-Dev.column)
-[cor Sample](Dataset/Dev/QALB-2014-L1-Dev.cor)
-[m2 Sample](Dataset/Dev/QALB-2014-L1-Dev.m2)
-[sent Sample](Dataset/Dev/QALB-2014-L1-Dev.sent)
-********************
-**S إلياهو فينوغراد يتنبأ بسيل من الهجمات الإيرانية واللني إما ستسقط فوق مناطق العرب وبعض البنايات الخاليه أو تصوير لبعض الجثث الحيه وهي تنقل فوق الطائرات وغيرها من فبركات هوليووديه إعلاميه . العداء الإيراني ليس إلا نموذج من الكذب الممنهج على طريقة النازي هتلر .**  
-`A 7 8|||Edit|||والتي|||REQUIRED|||-NONE-|||0`  
-`A 15 16|||Edit|||الخالية|||REQUIRED|||-NONE-|||0`  
-`A 20 21|||Edit|||الحية|||REQUIRED|||-NONE-|||0`  
-`A 28 29|||Edit|||هوليوودية|||REQUIRED|||-NONE-|||0`  
-`A 29 30|||Edit|||إعلامية|||REQUIRED|||-NONE-|||0`  
-`A 35 36|||Edit|||نموذجا|||REQUIRED|||-NONE-|||0`  
-
-* A: Denotes an annotation.
-
-* 7 8: Range of index in the text where the correction is applied. This correction changes the word at indexes 7 to 8.
-
-* Edit: Type of annotation, indicating a modification of existing content.  
-
-* <span dir="ltr">**والتي**: Corrected content to replace the original.</span>
-
-* REQUIRED: Signifies that this correction is necessary.  
-
-* -NONE-: Placeholder, typically for additional flags or notes.    
-
-* 0: Confidence score or priority level (if applicable).    
+[column Sample](Dev/QALB-2014-L1-Dev.column)  
+[cor Sample](Dev/QALB-2014-L1-Dev.cor)  
+[m2 Sample](Dev/QALB-2014-L1-Dev.m2)  
+[sent Sample](Dev/QALB-2014-L1-Dev.sent)  
+   
 ---
-## Type of annotation 
+## Type of annotation in m2 
 ---  
 - **Edit**:  
 Annotation: A 0 1|||Edit|||إلى|||REQUIRED|||-NONE-|||0  
