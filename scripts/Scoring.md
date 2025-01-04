@@ -40,26 +40,29 @@ Precision, Recall, and F1 Score are commonly used metrics for information retrie
 **Running the ```m2scorer``` Script:**
 
 
-To score the dataset using the m2scorer.py script, use the following general form in terminal:
-``` bash 
-python Score/m2scorer.py <input_corpus_file> <input_m2_file>
+To score the dataset using the m2scorer.py script, use the following general form in the terminal:
+> first, make sure you are in the `scripts` folder:
+``` bash
+cd scripts
+python m2scorer.py <input_corpus_file_path> <input_m2_file_path>
 ```
 
 **Parameters:**
 
-- ```<input_corpus_file>```: The path to the corpus file containing the original sentences.
-- ```<input_m2_file>```: The path to the M2 file containing the corrections.
+- ```<input_corpus_file_path>```: The path to the corpus file containing the original sentences (You may say the prediction of the model).
+- ```<input_m2_file_path>```: The path to the M2 file containing the corrections.
 
 **Example:**
 
-``` bash 
-python Score/m2scorer.py Dataset/Test/QALB-2014-L1-Test.cor Dataset/Test/QALB-2014-L1-Test.m2
+``` bash
+cd scripts
+python m2scorer.py ../Dataset/Test/QALB-2014-L1-Test.cor ../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 
 
 **Ensure that:**
 
-- Python is installed on your system.
+- Python is already installed on your system.
 - The m2scorer.py script and input files are available in the specified paths.
 --- 
 # References:  
