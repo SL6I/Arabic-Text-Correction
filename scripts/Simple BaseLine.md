@@ -74,4 +74,5 @@ python m2scorer.py baseline_output.txt ../Dataset/Test/QALB-2014-L1-Test.m2
    - Prints precision, recall, F-score  
 
 ### The Result
-![image](https://github.com/SL6I/Text-Correction/blob/ed62f6148f8c9e030ab284cb05eccd6228144db9/Images/Simple%20Baseline.jpg)
+![image](https://github.com/SL6I/Text-Correction/blob/main/Images/Simple%20Baseline.jpg)
+
