@@ -35,7 +35,7 @@ python build_baseline.py ../Dataset/Train/QALB-2014-L1-Train.m2
 **Example**:
 ```bash
 cd scripts
-python simple_baseline.py majority_map.json ../Dataset/Dev/QALB-2014-L1-Dev.sent
+python simple_baseline.py majority_map.json ../Dataset/Test/QALB-2014-L1-Test.sent
 ```
 - Will Produce `baseline_output.txt`.
 
@@ -49,7 +49,7 @@ python simple_baseline.py majority_map.json ../Dataset/Dev/QALB-2014-L1-Dev.sent
 **Example**:
 ```bash
 cd scripts
-python m2scorer.py baseline_output.txt ../Dataset/Dev/QALB-2014-L1-Dev.m2
+python m2scorer.py baseline_output.txt ../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 - Outputs lines like (it's actually worse):
   ```
