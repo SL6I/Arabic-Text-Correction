@@ -25,6 +25,12 @@ The QALB-2014-L1 dataset, sourced from the QALB project, is designed to support 
 ---
 ## Sample Data
 ---
+********************
+[column Sample](Dataset/Dev/QALB-2014-L1-Dev.column)
+[cor Sample](Dataset/Dev/QALB-2014-L1-Dev.cor)
+[m2 Sample](Dataset/Dev/QALB-2014-L1-Dev.m2)
+[sent Sample](Dataset/Dev/QALB-2014-L1-Dev.sent)
+********************
 **S إلياهو فينوغراد يتنبأ بسيل من الهجمات الإيرانية واللني إما ستسقط فوق مناطق العرب وبعض البنايات الخاليه أو تصوير لبعض الجثث الحيه وهي تنقل فوق الطائرات وغيرها من فبركات هوليووديه إعلاميه . العداء الإيراني ليس إلا نموذج من الكذب الممنهج على طريقة النازي هتلر .**  
 `A 7 8|||Edit|||والتي|||REQUIRED|||-NONE-|||0`  
 `A 15 16|||Edit|||الخالية|||REQUIRED|||-NONE-|||0`  
