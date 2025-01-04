@@ -56,7 +56,7 @@ python m2scorer.py <input_corpus_file_path> <input_m2_file_path>
 
 ``` bash
 cd scripts
-python m2scorer.py ../Dataset/Test/QALB-2014-L1-Test.cor ../Dataset/Test/QALB-2014-L1-Test.m2
+python m2scorer.py ../Dataset/Test/QALB-2014-L1-Test.sent ../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 
 
