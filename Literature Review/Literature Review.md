@@ -1,7 +1,7 @@
 # Title of paper
 [Advancements in Arabic Grammatical Error Detection and Correction: An Empirical Investigation](https://aclanthology.org/2023.emnlp-main.396.pdf)
 
-### Authors
+# Authors
 - [Bashar Alhafni](https://github.com/balhafni)  
 - [Go Inoue](https://github.com/go-inoue)  
 - [Christian Khairallah](https://github.com/christios)  
