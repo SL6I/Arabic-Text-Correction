@@ -1,11 +1,11 @@
+### Title of paper
+Advancements in Arabic Grammatical Error Detection and Correction: An Empirical Investigation
+
 ### Author
 1- Bashar Alhafni
 2- Go Inoue
 3- Christian Khairallah
 4- Nizar Habash
-
-### Title of paper
-Advancements in Arabic Grammatical Error Detection and Correction: An Empirical Investigation
 
 ### Publication venue
 Abu Dhabi, UAE
