@@ -51,12 +51,15 @@ python simple_baseline.py majority_map.json ../Dataset/Test/QALB-2014-L1-Test.se
 cd scripts
 python m2scorer.py baseline_output.txt ../Dataset/Test/QALB-2014-L1-Test.m2
 ```
-- Outputs lines like (it's actually worse):
+- Outputs lines like:
   ```
-  Precision   : 0.55
-  Recall      : 0.55
-  F_0.5       : 0.55
+  Precision   : 45.29
+  Recall      : 44.4
+  F_0.5       : 45.1
   ```
+  
+> [!WARNING]
+> You won't get the same results as ours because we tested the script on the entire dataset. However, since the data isn't ours, we are only providing a sample of it. As a result, the scoring results you obtain may differ from the ones we achieved.
 
   ---
 ## Files and Steps Recap
