@@ -25,9 +25,16 @@ To set up the project locally:
    ```bash
    git clone https://github.com/SL6I/Text-Correction.git
    ```
+**Install the required dependencies:**  
 ```bash
 pip install -r requirements.txt
 ```
+**(Optional) Navigate to the scripts folder:** 
+```bash  
+cd scripts
+```
+> [!TIP]
+> Navigating to the scripts folder (cd scripts) is not strictly necessary, but it makes running the subsequent commands easier since you won’t need to include the folder path in each command.
 
 ## Usage  
 The repository includes scripts for data preprocessing, model training, and evaluation. Detailed instructions for each step are provided below. 
