@@ -11,7 +11,6 @@ This document outlines a **dictionary-based** baseline for text correction.
 
 **Example**:
 ```bash
-cd scripts
 python build_baseline.py ../Dataset/Train/QALB-2014-L1-Train.m2
 ```
 - Produces a file `majority_map.json`, containing mappings like:
@@ -34,7 +33,6 @@ python build_baseline.py ../Dataset/Train/QALB-2014-L1-Train.m2
 
 **Example**:
 ```bash
-cd scripts
 python simple_baseline.py majority_map.json ../Dataset/Test/QALB-2014-L1-Test.sent
 ```
 - Will Produce `baseline_output.txt`.
@@ -48,7 +46,6 @@ python simple_baseline.py majority_map.json ../Dataset/Test/QALB-2014-L1-Test.se
 
 **Example**:
 ```bash
-cd scripts
 python m2scorer.py baseline_output.txt ../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 - Outputs lines like:
