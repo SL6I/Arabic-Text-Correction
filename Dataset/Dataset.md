@@ -32,38 +32,19 @@ The QALB-2014-L1 dataset, sourced from the QALB project, is designed to support 
    
 ---
 ## Type of annotation in m2 
----  
-- **Edit**:  
-Annotation: A 0 1|||Edit|||إلى|||REQUIRED|||-NONE-|||0  
-Explanation: Change the text at position 0 to "إلى".  
+---
+| **Type**      | **Annotation**                                                      | **Explanation**                                                                 |
+|---------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| **Edit**      | A 0 1\|\|\|Edit\|\|\|إلى\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0                           | Change the text at position 0 to "إلى".                                         |
+| **Delete**    | A 39 40\|\|\|Delete\|\|\|\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0                         | Remove the text between positions 39 and 40.                                    |
+| **Add_before**| A 4 4\|\|\|Add_before\|\|\|:\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0                      | Insert a colon (:) before the text at position 4.                               |
+| **Add_after** | A 62 62\|\|\|Add_after\|\|\|؟\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0                     | Insert a question mark (?) after the text at position 62.                       |
+| **Merge**     | A 6 8\|\|\|Merge\|\|\|ومن\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0                         | Combine the text from positions 6 to 8 into "ومن".                              |
+| **Split**     | A 43 44\|\|\|Split\|\|\|لا فرق\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0                    | Split the text at positions 43 to 44 into separate parts.                       |
+| **Move**      | A 30 32\|\|\|Move\|\|\|هؤلاء الإرهابيون\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0           | Move the text "هؤلاء الإرهابيون" from positions 30 to 32 to another location.   |
+| **Other**     | A 22 24\|\|\|Other\|\|\|وما الذي\|\|\|REQUIRED\|\|\|-NONE-\|\|\|0                  | Represents an unspecified or unique correction action involving the text "وما الذي". |
 
-- **Delete**:  
-Annotation: A 39 40|||Delete||||||REQUIRED|||-NONE-|||0  
-Explanation: Remove the text between positions 39 and 40.  
 
-- **Add_before**:  
-Annotation: A 4 4|||Add_before|||:|||REQUIRED|||-NONE-|||0  
-Explanation: Insert a colon (:) before the text at position 4.  
-
-- **Add_after**:  
-Annotation: A 62 62|||Add_after|||؟|||REQUIRED|||-NONE-|||0  
-Explanation: Insert a question mark (?) after the text at position 62.  
-
-- **Merge**:  
-Annotation: A 6 8|||Merge|||ومن|||REQUIRED|||-NONE-|||0  
-Explanation: Combine the text from positions 6 to 8 into "ومن".  
-
-- **Split**:  
-Annotation: A 43 44|||Split|||لا فرق|||REQUIRED|||-NONE-|||0  
-Explanation: Split the text at positions 43 to 44 into separate parts.  
-
-- **Move**:  
-Annotation: A 30 32|||Move|||هؤلاء الإرهابيون|||REQUIRED|||-NONE-|||0  
-Explanation: Move the text "هؤلاء الإرهابيون" from positions 30 to 32 to another location in the text.  
-
-- **Other**:  
-Annotation: A 22 24|||Other|||وما الذي|||REQUIRED|||-NONE-|||0  
-Explanation: This represents an unspecified or unique correction action involving the text "وما الذي" between positions 22 and 24.  
 ---
 
 
