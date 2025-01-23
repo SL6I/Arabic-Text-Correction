@@ -18,5 +18,5 @@ python rewriter.py `
   --test_file "scripts\Baseline\Sample\qalb14_dev.areta.txt" `
   --mode full `
   --cbr_ngrams 2 `
-  --output_path "scripts\Baseline\Sample"
+  --output_path "scripts\Baseline\Sample"m,
 ```
