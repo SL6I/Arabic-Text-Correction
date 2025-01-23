@@ -37,10 +37,10 @@
 # output_path=/home/ba63/gec-release/gec/outputs/qalb15/mle+morph/qalb15_dev.preds.txt
 
 # data\alignments\modeling_camelira\qalb14\qalb14_dev.nopnx.txt
-train_file="..\What_We_Need_Rewriter\qalb14_train.areta.nopnx.txt"
-test_file="..\What_We_Need_Rewriter\qalb14_dev.areta.txt"
+train_file="..\BaseLine\Sample\qalb14_train.areta.nopnx.txt"
+test_file="..\BaseLine\Sample\qalb14_dev.areta.txt"
 # ged_model=C:/Users/SL6/Desktop/Try3/arabic-gec/ged/model.py
-output_path="..\What_We_Need_Rewriter"
+output_path="..\BaseLine\Sample"
 python rewriter.py \
   --train_file $train_file \
   --test_file  $test_file \
