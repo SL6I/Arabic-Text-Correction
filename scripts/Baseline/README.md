@@ -6,6 +6,23 @@ An **MLE-based rewriting approach** for Arabic Grammatical Error Correction. It 
 1. **Train** a CBR (Corpus-Based Rewriting) model from `(src, tgt, tag)` data.
 2. **Rewrite** a test file by substituting each token according to the learned probabilities.
 
+## Example
+
+### Input
+```json
+  {Input (Test File):" انا الكتاب الكتاب "}
+  ```
+### Training Data
+```json
+  {Training Data:" الكتاب -> كاتب | replace "}
+  ```
+### Correct Output
+```json
+  {Correct Output:" أنا كاتب الكتاب "}
+  ```
+  
+
+
 ## Usage
 1. **Clone** this repo and navigate to the baseline scripts:
    ```bash
