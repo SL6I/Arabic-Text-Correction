@@ -42,8 +42,10 @@ The repository includes scripts for data preprocessing, model training, and eval
 
 
 ## Model Training
-# MLE AND ARAT5:
-Continue Here
+### MLE
+
+### ARAT5:
+
 
 ## Contributors
 This project is a collaborative effort by the following contributors:
