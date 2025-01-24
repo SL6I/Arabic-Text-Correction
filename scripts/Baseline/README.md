@@ -8,15 +8,23 @@ An **MLE-based rewriting approach** for Arabic Grammatical Error Correction. It 
 
 ## Example
 
-### Input
+### Input: 
+- Input text provided by a user or system.
+- The text " لكتاب " has a mistake.
+
 ```json
-  {Input (Test File):" انا الكتاب الكتاب "}
+  {Input (Test File):" انا لكتاب الكتاب "}
   ```
-### Training Data
+### Training Data: 
+- The training data shows the system how to fix mistakes by providing examples of incorrect words and their correct replacements.
+- using a replacement operation of the incorrect word "لكتب" to the correct word "كتب".
 ```json
-  {Training Data:" الكتاب -> كاتب | replace "}
+  {Training Data:" لكتاب -> كاتب | replace "}
   ```
-### Correct Output
+### Correct Output: 
+- This is expected output after applying the correction to the input.
+- The system replaces "لكتب" with "كتب" to produce the corrected sentence.
+
 ```json
   {Correct Output:" أنا كاتب الكتاب "}
   ```
