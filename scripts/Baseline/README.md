@@ -1,5 +1,11 @@
-# Baseline for Arabic GEC
+# Baseline for Arabic Grammatical Error Correction (GEC)
 
+-  [MLE](#mle-bi-gram)
+-  [AraT5](#arat5)
+-  [Results](#result)
+
+
+# MLE (Bi-gram):
 An **MLE-based rewriting approach** for Arabic Grammatical Error Correction. It learns probabilities of `(source_token → target_token)` from a training file and applies them to a test file.
 
 ## Overview
@@ -45,3 +51,9 @@ python rewriter.py `
   --cbr_ngrams 2 `
   --output_path "scripts\Baseline\Sample"m,
 ```
+
+# AraT5:
+
+
+
+# Result
