@@ -14,6 +14,7 @@ This repository provides tools and resources for developing Arabic text correcti
 
 ## Introduction
 Arabic, with its [rich morphology](https://discuss.huggingface.co/t/mrls-morphologically-rich-languages-nlp/3868/2) and complex syntax, presents unique challenges in text correction tasks. This project aims to address these challenges by leveraging the QALB-2014-L1 dataset to develop robust models capable of identifying and correcting grammatical errors in Arabic texts.  
+ADD MORE TEXT
 
 ## Dataset  
 The [QALB-2014-L1 dataset](https://github.com/SL6I/Text-Correction/blob/7b67fd25d517431ea77ced2d02754a0fb5977a8d/Dataset/Dataset.md) comprises native Arabic user comments from the Al Jazeera news website, annotated to highlight common grammatical errors. This dataset is instrumental in training models for grammatical error detection and correction in Arabic. 
@@ -39,6 +40,10 @@ cd scripts
 ## Usage  
 The repository includes scripts for data preprocessing, model training, and evaluation. Detailed instructions for each step are provided below. 
 
+
+## Model Training
+# MLE AND ARAT5:
+Continue Here
 
 ## Contributors
 This project is a collaborative effort by the following contributors:
