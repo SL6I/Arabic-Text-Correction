@@ -45,8 +45,7 @@ The repository includes scripts for data preprocessing, model training, and eval
 ### MLE
 
 ### ARAT5:
-
-
+AraT5 is a model specifically designed for handling Arabic language processing tasks, built on the T5 architecture. It supports various NLP applications such as text generation, translation, question generation, and paraphrasing in Arabic. Beyond its pre-built capabilities, we use it for QALB-2014 Dataset to fine-tuned for to improves the performance of GEC 
 ## Contributors
 This project is a collaborative effort by the following contributors:
 
