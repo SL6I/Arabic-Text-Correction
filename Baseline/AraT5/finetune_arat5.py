@@ -38,7 +38,7 @@ def preprocess_function(examples, tokenizer, max_seq_length=1024):
     model_inputs["labels"] = labels["input_ids"]
     return model_inputs
 
-def train_and_predict(train_file, dev_file, test_file, output_dir, epochs=15, learning_rate=1e-4):
+def train_and_predict(train_file, dev_file, output_dir, epochs=15, learning_rate=1e-4):
     # Set random seeds for reproducibility
     set_seed(42)
     
@@ -49,15 +49,10 @@ def train_and_predict(train_file, dev_file, test_file, output_dir, epochs=15, le
     
     # Load datasets from local JSON files
     train_data = load_dataset("json", data_files=train_file, split="train")
-    dev_data   = load_dataset("json", data_files=dev_file,   split="train")
-    test_data  = load_dataset("json", data_files=test_file,  split="train")
-    
+    dev_data   = load_dataset("json", data_files=dev_file,   split="train")    
     # Preprocess
     train_dataset = train_data.map(lambda x: preprocess_function(x, tokenizer), batched=True)
     dev_dataset   = dev_data.map(lambda x: preprocess_function(x, tokenizer), batched=True)
-    # We do not strictly need to preprocess the test_data for generation (we'll do it on the fly), but let's keep it consistent:
-    test_dataset  = test_data.map(lambda x: preprocess_function(x, tokenizer), batched=True)
-    
     # Training arguments
     training_args = TrainingArguments(
         output_dir=output_dir,
