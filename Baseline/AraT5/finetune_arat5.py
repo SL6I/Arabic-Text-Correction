@@ -101,59 +101,11 @@ def train_and_predict(train_file, dev_file, test_file, output_dir, epochs=15, le
     tokenizer.save_pretrained(output_dir)
     print(f"Model and tokenizer saved to: {output_dir}")
     
-    # (Re)Load the trained model for inference
-    tokenizer = AutoTokenizer.from_pretrained(output_dir, use_fast=False)
-    model = AutoModelForSeq2SeqLM.from_pretrained(output_dir)
-    
-    # Move model to GPU if available if we can so that it run fast
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model.to(device)
-
-    # Predict on Dev set
-    dev_predictions = []
-    for sample in tqdm(dev_data, desc="Predicting on dev data"):
-        input_text = sample["raw"]
-        tokenized_inp = tokenizer.encode(input_text, return_tensors="pt").to(device)
-        
-        outputs = model.generate(
-            tokenized_inp,
-            max_length=1024,
-            num_beams=5
-        )
-        pred_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        dev_predictions.append(pred_text)
-    
-    dev_pred_file = os.path.join(output_dir, "dev_predictions.txt")
-    with open(dev_pred_file, "w", encoding="utf-8") as f:
-        for pred in dev_predictions:
-            f.write(pred.strip() + "\n")
-    print(f"Dev predictions saved to {dev_pred_file}")
-
-    # Predict on Test set
-    test_predictions = []
-    for sample in tqdm(test_data, desc="Predicting on test data"):
-        input_text = sample["raw"]
-        tokenized_inp = tokenizer.encode(input_text, return_tensors="pt").to(device)
-        
-        outputs = model.generate(
-            tokenized_inp,
-            max_length=1024,
-            num_beams=5
-        )
-        pred_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        test_predictions.append(pred_text)
-    
-    test_pred_file = os.path.join(output_dir, "test_predictions.txt")
-    with open(test_pred_file, "w", encoding="utf-8") as f:
-        for pred in test_predictions:
-            f.write(pred.strip() + "\n")
-    print(f"Test predictions saved to {test_pred_file}")
 
 def main():
     parser = argparse.ArgumentParser(description="Fine-tune AraT5 locally and run predictions.")
     parser.add_argument("--train_file", type=str, required=True, help="Path to the training JSON file.")
     parser.add_argument("--dev_file",   type=str, required=True, help="Path to the dev JSON file.")
-    parser.add_argument("--test_file",  type=str, required=True, help="Path to the test JSON file.")
     parser.add_argument("--output_dir", type=str, default="arat5_gec_checkpoints", help="Where to save the fine-tuned model.")
     parser.add_argument("--epochs",     type=int, default=15,    help="Number of training epochs.")
     parser.add_argument("--learning_rate", type=float, default=1e-4, help="Learning rate for training.")
@@ -163,7 +115,6 @@ def main():
     train_and_predict(
         train_file=args.train_file,
         dev_file=args.dev_file,
-        test_file=args.test_file,
         output_dir=args.output_dir,
         epochs=args.epochs,
         learning_rate=args.learning_rate

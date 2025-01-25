@@ -53,7 +53,6 @@ Train the model using the finetune_arat5.py script:
 python finetune_arat5.py \
   --train_file "train.json" \
   --dev_file "dev.json" \
-  --test_file "test.json" \
   --output_dir "arat5_gec_checkpoints" \
   --epochs 15 \
   --learning_rate 1e-4
