@@ -105,11 +105,12 @@ Using `m2scorer`:
 ```bash
 python ../../Evaluation/Scripts/m2scorer.py \
   predictions/test_predictions.txt \
-  test.json
+  ../../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 
 ---
 
 ## Result:
+![image](https://github.com/user-attachments/assets/0b14e3f6-7e21-4552-859c-d06de51dc85f)
 
 **Happy Fine-Tuning!**
