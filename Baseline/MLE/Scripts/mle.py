@@ -1,4 +1,4 @@
-from data_utils import Dataset
+from Baseline.Scripts.data_utils import Dataset
 from collections import defaultdict
 import dill as pickle
 

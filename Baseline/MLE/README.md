@@ -40,16 +40,16 @@ An **MLE-based rewriting approach** for Arabic Grammatical Error Correction. It 
 ## Usage
 1. **Clone** this repo and navigate to the baseline scripts:
    ```bash
-   cd scripts/Baseline
+   cd Baseline/MLE
    ```
 2. **Run**:
 ```bash
-python rewriter.py `
-  --train_file "scripts\Baseline\Sample\qalb14_train.areta.nopnx.txt" `
-  --test_file "scripts\Baseline\Sample\qalb14_dev.areta.txt" `
+python Scripts/rewriter.py `
+  --train_file "Sample/qalb14_train.areta.nopnx.txt" `
+  --test_file "Sample/qalb14_dev.areta.txt" `
   --mode full `
   --cbr_ngrams 2 `
-  --output_path "scripts\Baseline\Sample"m,
+  --output_path "Sample"
 ```
 
 # AraT5:

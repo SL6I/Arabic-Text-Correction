@@ -38,7 +38,9 @@ Precision, Recall, and F1 Score are commonly used metrics for information retrie
 
 # How to run the script
 **Running the ```m2scorer``` Script:**
-
+```bash
+cd Evaluation/scripts
+```
 
 To score the dataset using the m2scorer.py script, use the following general form in the terminal:
 ``` bash
@@ -52,7 +54,7 @@ python m2scorer.py <input_corpus_file_path> <input_m2_file_path>
 
 **Example:**
 ``` bash
-python m2scorer.py ../Dataset/Test/QALB-2014-L1-Test.sent ../Dataset/Test/QALB-2014-L1-Test.m2
+python m2scorer.py ../../Dataset/Test/QALB-2014-L1-Test.sent ../../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 
 > [!IMPORTANT]

@@ -37,12 +37,12 @@ def main():
     corrected = apply_majority_baseline(lines, majority_map)
 
     # 4) Write to file
-    output_file = "baseline_output.txt"
+    output_file = "Simple_Baseline_output.txt"
     with open(output_file, "w", encoding="utf-8") as f:
         for c in corrected:
             f.write(c + "\n")
 
-    print(f"Baseline output written to {output_file}.")
+    print(f"Simple Baseline output written to {output_file}.")
 
 if __name__ == "__main__":
     main()

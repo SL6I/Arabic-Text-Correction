@@ -9,10 +9,15 @@ This document outlines a **dictionary-based** baseline for text correction.
 - **Method**: For each token that is changed in the gold reference, count how often it’s replaced by each correction.  
 - **Output**: A dictionary from “incorrect token” → “most frequent correction”.
 
-**Example**:
 ```bash
-python build_baseline.py ../Dataset/Train/QALB-2014-L1-Train.m2
+cd Simple_Baseline/Scripts
 ```
+
+```bash
+python build_baseline.py ../../Dataset/Train/QALB-2014-L1-Train.m2
+
+```
+
 - Produces a file `majority_map.json`, containing mappings like:
   ```json
   {
@@ -33,7 +38,8 @@ python build_baseline.py ../Dataset/Train/QALB-2014-L1-Train.m2
 
 **Example**:
 ```bash
-python simple_baseline.py majority_map.json ../Dataset/Test/QALB-2014-L1-Test.sent
+python simple_baseline.py majority_map.json ../../Dataset/Test/QALB-2014-L1-Test.sent
+
 ```
 - Will Produce `baseline_output.txt`.
 
@@ -43,11 +49,15 @@ python simple_baseline.py majority_map.json ../Dataset/Test/QALB-2014-L1-Test.se
 
 - **Goal**: Compare your baseline’s corrected output with a gold reference (`.m2`) file.  
 - **Method**: Use `m2scorer.py`, which reports how many edits were correct vs missed.
+```bash
+cd ../../Evaluation/Scripts
+```
 
 **Example**:
 ```bash
-python m2scorer.py baseline_output.txt ../Dataset/Test/QALB-2014-L1-Test.m2
+python m2scorer.py ../../Simple_Baseline/Scripts/Simple_Baseline_Output.txt ../../Dataset/Test/QALB-2014-L1-Test.m2
 ```
+
 - Outputs lines like:
   ```
   Precision   : 45.29

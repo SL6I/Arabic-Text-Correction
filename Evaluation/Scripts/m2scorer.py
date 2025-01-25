@@ -36,8 +36,8 @@ import sys
 from getopt import getopt
 
 # Import these from your local project or any folder you placed them:
-import levenshtein
-from util import paragraphs, smart_open
+import Evaluation.Scripts.levenshtein as levenshtein
+from Evaluation.Scripts.util import paragraphs, smart_open
 # import levenshtein
 
 
