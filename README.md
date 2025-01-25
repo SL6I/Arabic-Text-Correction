@@ -9,7 +9,6 @@ This repository provides tools and resources for developing Arabic text correcti
 - [Installation](#installation)
 - [Usage](#usage)
 - [Model Training](#model-training)
-- [Evaluation](#evaluation)
 - [Contributors](#contributors)
 
 ## Introduction
