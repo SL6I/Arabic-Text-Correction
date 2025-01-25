@@ -1,8 +1,8 @@
 import logging
 from error_identifier import ErrorIdentifier
 from mle import CBR, build_ngrams
-from Baseline.Scripts.data_utils import Dataset, postprocess_src_ged
-from Baseline.Scripts.error_analysis import error_analysis, ErrorAnalysisExample
+from data_utils import Dataset, postprocess_src_ged
+from error_analysis import error_analysis, ErrorAnalysisExample
 import re
 import argparse
 

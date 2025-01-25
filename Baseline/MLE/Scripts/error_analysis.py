@@ -1,5 +1,5 @@
 from aligner.aligner import align_error_analysis
-from Baseline.Scripts.data_utils import project_span
+from data_utils import project_span
 
 
 class ErrorAnalysisExample:
