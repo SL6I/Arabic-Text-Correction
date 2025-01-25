@@ -37,7 +37,7 @@ Arabic Grammatical Error Correction (GEC) detects and corrects grammatical mista
 3. **GPU (recommended)** for faster training.
 - **Navigate to the directory**: Move into the directory containing the files:
   ```bash
-  cd Baseline\AraT5
+  cd Baseline/AraT5
    ```
 ---
 
