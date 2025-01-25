@@ -1,54 +1,61 @@
-# AraT5 for Arabic Grammatical Error Correction (GEC)
+# AraT5: Fine-Tuning for Arabic GEC
 
-AraT5 is a transformer-based model fine-tuned for Arabic Grammatical Error Correction tasks. This guide provides step-by-step instructions to train, evaluate, and generate predictions using AraT5.
-
-## Overview
-
-1. **Train** the AraT5 model using training and development datasets.
-2. **Predict** corrections for input texts using a fine-tuned AraT5 model.
-3. **Evaluate** the model's performance on a test dataset.
+This repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https://huggingface.co/UBC-NLP/araT5-base) on Arabic Grammatical Error Correction tasks. You can train the model using `finetune_arat5.py` and generate predictions with `predict_arat5.py`.
 
 ---
 
-## Prerequisites
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Requirements](#requirements)
+3. [Data Format](#data-format)
+4. [Usage](#usage)
+5. [Train](#training)
+6. [Prediction](#prediction)
+7. [Evaluation](#evaluation)
+8. [Result](#result)
 
-### Python Environment
-- **Python 3.x**: Ensure Python is installed on your system.
-- **Dependencies**: Install the required Python libraries:
-  ```bash
-  pip install -r requirements.txt
-    ```
-- **Navigate to the directory**: Move into the directory containing the files:
-  ```bash
-  cd Baseline\AraT5
+---
+
+## Introduction
+
+Arabic Grammatical Error Correction (GEC) detects and corrects grammatical mistakes in Arabic text. This repository fine-tunes **AraT5**, a variant of the T5 model, on Qalb-2014.
+
+---
+
+## Requirements
+
+1. **Python 3.x**
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
    ```
-  ---
-## Example
-### Input: 
-- Input text provided by a user or system.
-- The text " لكتاب " has a mistake.
+   Minimal packages:
+   - `transformers`
+   - `datasets`
+   - `sentencepiece`
+   - `tqdm`
+3. **GPU (recommended)** for faster training.
 
-```json
-  {Input (Test File):" انا لكتاب الكتاب "}
-  ```
-### Training Data: 
-- The training data shows the system how to fix mistakes by providing examples of incorrect words and their correct replacements.
-- using a replacement operation of the incorrect word "لكتب" to the correct word "كتب".
-```json
-  {Training Data:" لكتاب -> كاتب | replace "}
-  ```
-### Correct Output: 
-- This is expected output after applying the correction to the input.
-- The system replaces "لكتب" with "كتب" to produce the corrected sentence.
-
-```json
-  {Correct Output:" أنا كاتب الكتاب "}
-  ```
 ---
 
-## How to Run
-1. Fine-Tuning AraT5
-Train the model using the finetune_arat5.py script:
+## Data Format
+
+Each JSON file (train/dev/test) follows:
+```json
+[
+  { "raw": "أنا لكتاب الكتاب", "cor": "أنا كاتب الكتاب" },
+  { "raw": "هذه بعض الكلمات الخاطأة", "cor": "هذه بعض الكلمات الخاطئة" }
+]
+```
+- **raw**: Uncorrected Arabic sentence.
+- **cor**: Corrected sentence.
+
+---
+# Usage
+In the following code we will guide you how to run the code:
+## Training
+
+Run `finetune_arat5.py`:
 ```bash
 python finetune_arat5.py \
   --train_file "train.json" \
@@ -58,10 +65,18 @@ python finetune_arat5.py \
   --learning_rate 1e-4
 ```
 
-2. Generating Predictions
-Generate predictions for the test dataset using the fine-tuned model:
+**Parameters**:
+- `--train_file`: Path to training set.
+- `--dev_file`: Path to dev set.
+- `--output_dir`: Directory for checkpoints.
+- `--epochs`: Training epochs (default 15).
+- `--learning_rate`: Default `1e-4`.
 
+---
 
+## Inference
+
+Run `predict_arat5.py`:
 ```bash
 python predict_arat5.py \
   --model_dir "arat5_gec_checkpoints\saved_model" \
@@ -72,8 +87,26 @@ python predict_arat5.py \
   --num_beams 5
 ```
 
-3. Evaluation
-Evaluate the model's performance using the m2scorer.py script:
+**Parameters**:
+- `--model_dir`: Folder of our fine-tuned model.
+- `--dev_file`: Path to dev set.
+- `--test_file`: Path to test set.
+- `--output_dir`: Stores predictions.
+- `--num_beams`: Beam parameter.
+
+---
+
+## Evaluation
+
+Using `m2scorer`:
 ```bash
-python ../../Evaluation/Scripts/m2scorer.py predictions/test_predictions.txt test.json
-  ```
+python ../../Evaluation/Scripts/m2scorer.py \
+  predictions/test_predictions.txt \
+  test.json
+```
+
+---
+
+## Result:
+
+**Happy Fine-Tuning!**
