@@ -53,5 +53,6 @@ python Scripts/rewriter.py `
 
 
 # Result
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/d4413a07-8637-440d-b133-de8f22f9de2a)
+
 
