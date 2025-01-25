@@ -57,12 +57,12 @@ def main():
                 f.write(pred.strip() + "\n")
         print(f"{name.capitalize()} predictions saved to {out_file}")
 
-    # If dev_file is provided, run predictions on dev
+    # If dev_file is provided, run predictions on dev DEALING WITH THE CASE NO dev
     if args.dev_file:
         dev_data = load_dataset("json", data_files=args.dev_file, split="train")
         predict(dev_data, "dev")
 
-    # If test_file is provided, run predictions on test
+    # If test_file is provided, run predictions on test DEALING WITH THE CASE NO test
     if args.test_file:
         test_data = load_dataset("json", data_files=args.test_file, split="train")
         predict(test_data, "test")
