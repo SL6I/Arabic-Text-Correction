@@ -1,7 +1,6 @@
-# Baseline for Arabic Grammatical Error Correction (GEC)
+# Baseline for Arabic Grammatical Error Correction (GEC) Using MLE
 
 -  [MLE](#mle-bi-gram)
--  [AraT5](#arat5)
 -  [Results](#result)
 
 
@@ -52,8 +51,7 @@ python Scripts/rewriter.py `
   --output_path "Sample"
 ```
 
-# AraT5:
-
-
 
 # Result
+![Uploading image.png…]()
+
