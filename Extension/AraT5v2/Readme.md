@@ -18,7 +18,7 @@ Working through scripts for Arab T5 version 2 to tackle Arabic Grammatical Error
 
 ## Introduction
 
-Arabic Grammatical Error Correction (GEC) involves detecting and correcting grammatical mistakes in Arabic text. This repository fine-tunes AraT5v2, an enhanced variant of the T5 model tailored for Arabic, on the Qalb-2014 dataset.
+Significant advancements have been made in AraT5v2, including faster convergence, larger sequence length, and enhanced Arabic grammatical error correction. I am assessing its improved capabilities on the Qalb-2014 dataset.
 
 ---
 
@@ -55,7 +55,7 @@ Each JSON file (train/dev/test) follows:
 
 ---
 # Usage
-In the following code we will guide you how to run the code:
+In the following code, we will guide you on how to run the code:
 ## Training
 
 Run `finetune_arat5v2.py`:
@@ -69,7 +69,7 @@ python finetune_arat5v2.py `
 ```
 
 **Parameters**:
-- `--train_file`: Path to training set.
+- `--train_file`: Path to the training set.
 - `--dev_file`: Path to dev set.
 - `--output_dir`: Directory for checkpoints.
 - `--epochs`: Training epochs (default 5).
