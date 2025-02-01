@@ -7,8 +7,8 @@
 - [part-of-speech tagging (POS)](#part-of-speech-tagging (POS))
 - [Why part-of-speech tagging (POS)](#Why-part-of-speech-tagging (POS))
 - [Example of part-of-speech tagging (POS)](#Example-of-part-of-speech-tagging (POS))
-- [Evaluation](#evaluation)
-- [Result](#result)
+- [Evaluation and Result](#Evaluation-and-Result)
+
 ## part-of-speech tagging (POS)
 
 **part-of-speech tagging (POS)** tagging is the process of assigning a grammatical category—such as noun, verb, adjective, etc.—to each word in a text. This labeling helps in understanding the structure of sentences and the relationships between words, which in turn improves the accuracy and performance of various natural language processing tasks.
@@ -20,6 +20,7 @@ In our model, incorporating part-of-speech (POS) tagging significantly enhances 
 
 ## Example of part-of-speech tagging (POS)
 
-## Evaluation
+## Evaluation and Result
 
-## Result
+![image](https://github.com/user-attachments/assets/440fbe75-22f7-418c-afdd-4d133c72e171)
+
