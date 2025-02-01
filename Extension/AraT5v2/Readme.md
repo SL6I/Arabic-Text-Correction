@@ -1,5 +1,5 @@
+# updating AraT5 to a new version for fine-tuning Arabic GEC tasks involves using customized scripts for training and predictions.
 # AraT5v2: Fine-Tuning for Arabic GEC
-
 Working through scripts for Arab T5 version 2 to tackle Arabic Grammatical Error Correction. Training involves using `finetune_arat5v2.py`, while predictions are handled with `predict_arat5v2.py`.
 
 ---
