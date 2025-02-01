@@ -1,6 +1,17 @@
 # AraT5v2_with_pos
 
-in our extension we bleive adding part of speech tagging to the text will increse the acurecy **AraT5v2_with_pos** is an Arabic text correction project that leverages the AraT5v2-base-1024 model enhanced with part-of-speech (POS) information. The POS tags used in this project were obtained from Farasa, a popular Arabic NLP toolkit. By integrating POS features into the model’s pipeline, the system provides improved correction performance and linguistic awareness.
-(![image alt](PASTE))
+**AraT5v2_with_pos** At AraT5v2_with_pos, we believe that incorporating part-of-speech tagging into text can significantly boost accuracy. This enhances the AraT5v2-base-1024 model with POS information sourced from Farasa, a well-regarded Arabic NLP toolkit. By seamlessly integrating these linguistic features into the model’s pipeline, the system delivers superior correction performance and deeper language understanding.
+![image alt](https://github.com/SL6I/Text-Correction/blob/64a9770e138e8a2640bc6aa2e9cf8c69d1807199/Images/POS-Tagging.jpg)
 
- #Why part-of-speech (POS)
+# part-of-speech tagging (POS)
+
+**part-of-speech tagging (POS)** tagging is the process of assigning a grammatical category—such as noun, verb, adjective, etc.—to each word in a text. This labeling helps in understanding the structure of sentences and the relationships between words, which in turn improves the accuracy and performance of various natural language processing tasks.
+
+ # Why part-of-speech tagging (POS)
+
+In our model, incorporating part-of-speech (POS) tagging significantly enhances performance. It provides crucial syntactic context that helps the model understand word roles and sentence structure, leading to better accuracy and overall effectiveness.
+
+ # Example of part-of-speech tagging (POS)
+
+
+# Resault and Evaluation
