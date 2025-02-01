@@ -18,7 +18,7 @@ Working through scripts for Arab T5 version 2 to tackle Arabic Grammatical Error
 
 ## Introduction
 
-More advanced model for Arabic Grammatical Error Correction, highlighting its updates and the dataset it uses.
+Arabic Grammatical Error Correction (GEC) involves detecting and correcting grammatical mistakes in Arabic text. This repository fine-tunes AraT5v2, an enhanced variant of the T5 model tailored for Arabic, on the Qalb-2014 dataset.
 
 ---
 
