@@ -55,7 +55,7 @@ cd ../../Evaluation/Scripts
 
 **Example**:
 ```bash
-python m2scorer.py ../../Simple_Baseline/Scripts/Simple_Baseline_Output.txt ../../Dataset/Test/QALB-2014-L1-Test.m2
+python m2scorer.py ../../Simple_Baseline/Scripts/baseline_output.txt ../../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 
 - Outputs lines like:
