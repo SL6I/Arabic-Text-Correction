@@ -10,9 +10,10 @@ This repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https:
 3. [Data Format](#data-format)
 4. [Usage](#usage)
 5. [Train](#training)
-6. [Prediction](#prediction)
+6. [Prediction](#inference)
 7. [Evaluation](#evaluation)
-8. [Result](#result)
+8. [Limitations](#limitations)
+9. [Result](#result)
 
 ---
 
@@ -109,7 +110,11 @@ python ../../Evaluation/Scripts/m2scorer.py \
 ```
 
 ---
+## Limitations
 
+Due to limited computational resources, we trained the model with **15 epochs** and a batch size of **8** instead of the ideal **30 epochs** and a batch size of **32**. This constraint may affect the performance and convergence of the fine-tuning process. Future work may involve experiments with increased epochs and larger batch sizes when more resources become available.
+
+---
 ## Result:
 ![image](https://github.com/user-attachments/assets/0b14e3f6-7e21-4552-859c-d06de51dc85f)
 
