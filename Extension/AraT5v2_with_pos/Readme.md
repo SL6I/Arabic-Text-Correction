@@ -71,8 +71,8 @@ Each JSON file (train/dev/test) follows this format:
 Run `finetune_arat5v2_pos.py`:
 ```bash
 python finetune_arat5v2_pos.py \
-  --train_file "../../Dataset/finetuning/AraT5v2-POS/train.json" \
-  --dev_file "../../Dataset/finetuning/AraT5v2-POS/dev.json" \
+  --train_file "../../Dataset/finetuning/AraT5v2+pos/train_processed_pos.json" \
+  --dev_file "../../Dataset/finetuning/AraT5v2+pos/dev_processed_pos.json" \
   --output_dir "arat5v2_pos_checkpoints" \
   --epochs 5 \
   --learning_rate 1e-4
@@ -93,8 +93,8 @@ Run `predict_arat5v2_pos.py`:
 ```bash
 python predict_arat5v2_pos.py \
   --model_dir "arat5v2_pos_checkpoints/saved_model" \
-  --dev_file "../../Dataset/finetuning/AraT5v2-POS/dev.json" \
-  --test_file "../../Dataset/finetuning/AraT5v2-POS/test.json" \
+  --dev_file "../../Dataset/finetuning/AraT5v2+pos/dev_processed_pos.json" \
+  --test_file "../../Dataset/finetuning/AraT5v2+pos/test_processed_pos.json" \
   --output_dir "predictions" \
   --max_length 1024 \
   --num_beams 5
