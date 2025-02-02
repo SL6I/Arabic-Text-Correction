@@ -1,6 +1,6 @@
 # AraT5: Fine-Tuning for Arabic GEC
 
-This repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https://huggingface.co/UBC-NLP/araT5-base) on Arabic Grammatical Error Correction tasks. You can train the model using `finetune_arat5.py` and generate predictions with `predict_arat5.py`.
+TThis repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https://huggingface.co/UBC-NLP/araT5-base) for Arabic Grammatical Error Correction tasks, following the instructions outlined in the paper [Advancements in Arabic Grammatical Error Detection and Correction: An Empirical Investigation](https://aclanthology.org/2023.emnlp-main.396.pdf). However, due to resource limitations, we trained the model for 15 epochs with a batch size of 8, instead of the original 30 epochs and batch size of 32.. You can train the model using `finetune_arat5.py` and generate predictions with `predict_arat5.py`.
 
 ---
 
@@ -12,7 +12,6 @@ This repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https:
 5. [Train](#training)
 6. [Prediction](#inference)
 7. [Evaluation](#evaluation)
-8. [Limitations](#limitations)
 9. [Result](#result)
 
 ---
@@ -109,10 +108,6 @@ python ../../Evaluation/Scripts/m2scorer.py \
   ../../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 
----
-## Limitations
-
-Due to limited computational resources, we trained the model with **15 epochs** and a batch size of **8** instead of the ideal **30 epochs** and a batch size of **32**. This constraint may affect the performance and convergence of the fine-tuning process. Future work may involve experiments with increased epochs and larger batch sizes when more resources become available.
 
 ---
 ## Result:
