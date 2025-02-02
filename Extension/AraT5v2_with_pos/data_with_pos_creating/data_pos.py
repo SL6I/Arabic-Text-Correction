@@ -15,7 +15,7 @@ nlp = stanza.Pipeline('ar', processors='tokenize,pos', tokenize_pretokenized=Fal
 
 # Define the input directory where your original JSON files (train.json, dev.json, test.json) are located.
 # You can modify this path as needed.
-INPUT_DIR = os.path.join("Dataset", "finetuning", "AraT5v2")
+INPUT_DIR = os.path.join("Dataset", "finetuning", "AraT5-AraT5v2")
 
 # Define the output directory where processed files with POS tags will be saved.
 OUTPUT_DIR = os.path.join("Dataset", "finetuning", "AraT5v2+pos")
