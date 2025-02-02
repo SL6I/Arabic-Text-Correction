@@ -111,6 +111,7 @@ python ../../Evaluation/Scripts/m2scorer.py \
 ---
 
 ## Result:
+![image](https://github.com/user-attachments/assets/88ac5d0d-7c07-4336-bb98-972c739d9f2b)
 
 
 **Happy Fine-Tuning!**
