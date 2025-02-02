@@ -60,11 +60,11 @@ In the following code we will guide you how to run the code:
 
 Run `finetune_arat5.py`:
 ```bash
-python finetune_arat5.py `
-  --train_file "../../Dataset/finetuning/AraT5-AraT5v2/train.json" `
-  --dev_file "../../Dataset/finetuning/AraT5-AraT5v2/dev.json" `
-  --output_dir "arat5_gec_checkpoints" `
-  --epochs 15 `
+python finetune_arat5.py \
+  --train_file "../../Dataset/finetuning/AraT5-AraT5v2/train.json" \
+  --dev_file "../../Dataset/finetuning/AraT5-AraT5v2/dev.json" \
+  --output_dir "arat5_gec_checkpoints" \
+  --epochs 15 \
   --learning_rate 1e-4
 ```
 
