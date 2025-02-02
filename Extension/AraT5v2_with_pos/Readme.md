@@ -1,6 +1,6 @@
 # AraT5v2_with_pos
 
-**AraT5v2_with_pos** At AraT5v2_with_pos, we believe that incorporating part-of-speech tagging into text can significantly boost accuracy. This enhances the AraT5v2-base-1024 model with POS information sourced from Farasa, a well-regarded Arabic NLP toolkit. By seamlessly integrating these linguistic features into the model’s pipeline, the system delivers superior correction performance and deeper language understanding.
+**AraT5v2_with_pos** At AraT5v2_with_pos, we believe that incorporating part-of-speech tagging into text can significantly boost accuracy. This enhances the AraT5v2-base-1024 model with POS information sourced from [Farasa](https://farasa.qcri.org/), a well-regarded Arabic NLP toolkit. By seamlessly integrating these linguistic features into the model’s pipeline, the system delivers superior correction performance and deeper language understanding.
 
 ## Table of Contents
 
@@ -22,5 +22,7 @@ In our model, incorporating part-of-speech (POS) tagging significantly enhances 
 
 ## Evaluation and Result
 
-![image](https://github.com/user-attachments/assets/440fbe75-22f7-418c-afdd-4d133c72e171)
+![image](https://github.com/user-attachments/assets/c753fe4e-16e0-474d-8733-57c221dddce7)
+
+
 
