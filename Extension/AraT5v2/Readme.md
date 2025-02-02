@@ -37,7 +37,7 @@ Significant advancements have been made in AraT5v2, including faster convergence
 3. **GPU (recommended)** for faster training.
 - **Navigate to the directory**: Move into the directory containing the files:
   ```bash
-  cd Baseline/AraT5v2
+  cd Extension/AraT5v2
    ```
 ---
 
@@ -60,11 +60,11 @@ In the following code, we will guide you on how to run the code:
 
 Run `finetune_arat5v2.py`:
 ```bash
-python finetune_arat5v2.py `
-  --train_file "train.json" `
-  --dev_file "dev.json" `
-  --output_dir "arat5v2_gec_checkpoints" `
-  --epochs 5 `
+python finetune_arat5v2.py \
+  --train_file "../../Dataset/finetuning/AraT5-AraT5v2/train.json" \
+  --dev_file "../../Dataset/finetuning/AraT5-AraT5v2/dev.json" \
+  --output_dir "arat5v2_gec_checkpoints" \
+  --epochs 5 \
   --learning_rate 1e-4
 ```
 
@@ -83,8 +83,8 @@ Run `predict_arat5v2.py`:
 ```bash
 python predict_arat5v2.py \
   --model_dir "arat5v2_gec_checkpoints\saved_model" \
-  --dev_file "dev.json" \
-  --test_file "test.json" \
+  --dev_file "../../Dataset/finetuning/AraT5-AraT5v2/dev.json" \
+  --test_file "../../Dataset/finetuning/AraT5-AraT5v2/test.json" \
   --output_dir "predictions" \
   --max_length 1024 \
   --num_beams 5
