@@ -1,6 +1,6 @@
 # AraT5: Fine-Tuning for Arabic GEC
 
-This repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https://huggingface.co/UBC-NLP/araT5-base) on Arabic Grammatical Error Correction tasks. You can train the model using `finetune_arat5.py` and generate predictions with `predict_arat5.py`.
+TThis repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https://huggingface.co/UBC-NLP/araT5-base) for Arabic Grammatical Error Correction tasks, following the instructions outlined in the paper [Advancements in Arabic Grammatical Error Detection and Correction: An Empirical Investigation](https://aclanthology.org/2023.emnlp-main.396.pdf). However, due to resource limitations, we trained the model for 15 epochs with a batch size of 8, instead of the original 30 epochs and batch size of 32.. You can train the model using `finetune_arat5.py` and generate predictions with `predict_arat5.py`.
 
 ---
 
@@ -10,9 +10,9 @@ This repository provides scripts for **fine-tuning** [UBC-NLP/araT5-base](https:
 3. [Data Format](#data-format)
 4. [Usage](#usage)
 5. [Train](#training)
-6. [Prediction](#prediction)
+6. [Prediction](#inference)
 7. [Evaluation](#evaluation)
-8. [Result](#result)
+9. [Result](#result)
 
 ---
 
@@ -108,8 +108,8 @@ python ../../Evaluation/Scripts/m2scorer.py \
   ../../Dataset/Test/QALB-2014-L1-Test.m2
 ```
 
----
 
+---
 ## Result:
 ![image](https://github.com/user-attachments/assets/0b14e3f6-7e21-4552-859c-d06de51dc85f)
 
