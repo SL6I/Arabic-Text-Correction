@@ -5,7 +5,7 @@ This repository provides tools and resources for developing Arabic text correcti
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Literature Review](#Literature Review)
+- [Paper](#paper)
 - [Dataset](#dataset)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,7 +17,7 @@ Arabic, with its [rich morphology](https://discuss.huggingface.co/t/mrls-morphol
 
 Our project focuses on Arabic text correction, leveraging the QALB-2014-L1 dataset to develop robust models capable of identifying and correcting grammatical errors, restoring diacritics, and resolving common linguistic issues. By addressing these challenges, our work aims to enhance the quality and accuracy of Arabic text processing, supporting applications in education, automated proofreading, and content generation.
 
-## Literature Review
+## Paper
 [Leveraging Part-of-Speech Tagging for Robust Arabic Text Correction.pdf](https://github.com/user-attachments/files/18654240/Leveraging.Part-of-Speech.Tagging.for.Robust.Arabic.Text.Correction.pdf)
 
 
