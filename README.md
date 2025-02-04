@@ -42,6 +42,10 @@ Maximum Likelihood Estimation (MLE) is a statistical method used to estimate the
 ### AraT5:
 AraT5 is a model specifically designed for handling Arabic language processing tasks, built on the T5 architecture. It supports various NLP applications such as text generation, translation, question generation, and paraphrasing in Arabic. Beyond its pre-built capabilities, we use it for the QALB-2014 Dataset to fine-tuned for to improves the performance of GEC for more information about AraT5 click on the [link](https://github.com/UBC-NLP/araT5). 
 
+### AraT5 + POS:
+AraT5v2 with POS improves error correction by adding Part-of-Speech (POS) tagging to the input. It uses POS tags from Stanza to give the model more grammatical and structural context. 
+
+This helps the model better understand sentence structure and grammar, leading to more accurate corrections. It also speeds up training and improves performance. Tests on the QALB-2014 dataset show that this approach performs better than the standard AraT5v2 model.
 ## Contributors
 This project is a collaborative effort by the following contributors:
 
