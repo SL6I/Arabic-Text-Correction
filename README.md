@@ -55,7 +55,7 @@ This helps the model better understand sentence structure and grammar, leading t
 This project is a collaborative effort by the following contributors:
 
 [Sultan Masoud Alaqili](https://github.com/SL6I)  
-[Naif Muteb Alharbi](https://github.com/Naif901)  
+[Naif Muteb Alharbi](https://github.com/NaifMAlharbi)  
 [Mohammed Ahmed Almufarriji](https://github.com/Mohammedamd12)  
 [Mohammed Abdullah Saati](https://github.com/MohammedSaati)
 
